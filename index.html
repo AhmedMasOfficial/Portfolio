@@ -12,9 +12,9 @@
 <body>
     <div id="blur-background" onclick="hide()">
     </div>
-    <div id="prev-card" class="next_prev" onclick="hide()"><i class="fa-solid fa-arrow-left"></i>
+    <div id="prev-card" class="next_prev" onclick="to_prev()"><i class="fa-solid fa-arrow-left"></i>
     </div>
-    <div id="next-card" class="next_prev" onclick="hide()"><i class="fa-solid fa-arrow-right"></i>
+    <div id="next-card" class="next_prev" onclick="to_next()"><i class="fa-solid fa-arrow-right"></i>
     </div>
 
 
@@ -411,45 +411,61 @@
         const card12 = document.getElementById("full-view-12");
         const next = document.getElementById("next-card");
         const prev = document.getElementById("prev-card");
+        var t = document.getElementsByClassName("full");
+        var current = -1;
         function blured(object) {
             background.style.display = "block";
             next.style.display = "block";
             prev.style.display = "block";
             if (object == document.getElementById("1")) {
                 card1.style.display = "block";
+                prev.style.display = "none";
+                current = 1;
             }
             if (object == document.getElementById("2")) {
                 card2.style.display = "block";
+                current = 2;
             }
             if (object == document.getElementById("3")) {
                 card3.style.display = "block";
+                current = 3;
             }
             if (object == document.getElementById("4")) {
                 card4.style.display = "block";
+                current = 4;
             }
             if (object == document.getElementById("5")) {
                 card5.style.display = "block";
+                current = 5;
             }
             if (object == document.getElementById("6")) {
                 card6.style.display = "block";
+                current = 6;
             }
             if (object == document.getElementById("7")) {
                 card7.style.display = "block";
+                current = 7;
             }
             if (object == document.getElementById("8")) {
                 card8.style.display = "block";
+                current = 8;
             }
             if (object == document.getElementById("9")) {
                 card9.style.display = "block";
+                current = 9;
             }
             if (object == document.getElementById("10")) {
                 card10.style.display = "block";
+                current = 10;
             }
             if (object == document.getElementById("11")) {
                 card11.style.display = "block";
+                current = 11;
             }
             if (object == document.getElementById("12")) {
                 card12.style.display = "block";
+                next.style.display = "none";
+                current = 12;
             }
 
 
@@ -470,6 +486,29 @@
             card10.style.display = "none";
             card11.style.display = "none";
             card12.style.display = "none";
+        }
+
+        function to_next(){
+            t[current-1].style.display = "none";
+            t[current].style.display = "block";
+            current++;
+            if (current==12){
+                next.style.display = "none";
+            }
+            else{
+                next.style.display = "block";
+            }
+        }
+        function to_prev(){
+            t[current-1].style.display = "none";
+            t[current-2].style.display = "block";
+            current--;
+            if (current==1){
+                prev.style.display = "none";
+            }
+            else{
+                prev.style.display = "block";
+            }
         }
     </script>
     
