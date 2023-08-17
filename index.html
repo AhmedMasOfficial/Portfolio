@@ -409,10 +409,9 @@
         const card10 = document.getElementById("full-view-10");
         const card11 = document.getElementById("full-view-11");
         const card12 = document.getElementById("full-view-12");
-        const next = document.getElementById("next-card");
-        const prev = document.getElementById("prev-card");
+        var next = document.getElementById("next-card");
+        var prev = document.getElementById("prev-card");
         var t = document.getElementsByClassName("full");
-        var current = -1;
         function blured(object) {
             background.style.display = "block";
             next.style.display = "block";
@@ -491,6 +490,7 @@
         function to_next(){
             t[current-1].style.display = "none";
             t[current].style.display = "block";
+            prev.style.display = "block";
             current++;
             if (current==12){
                 next.style.display = "none";
@@ -502,12 +502,14 @@
         function to_prev(){
             t[current-1].style.display = "none";
             t[current-2].style.display = "block";
+            next.style.display = "block";
             current--;
             if (current==1){
                 prev.style.display = "none";
             }
             else{
                 prev.style.display = "block";
+
             }
         }
     </script>
