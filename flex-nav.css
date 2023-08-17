@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: all .3s ;
+    transition: all .3s;
     box-sizing: border-box;
 }
 
-header{
+/*====================================== header =============================================== */
+header {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -16,113 +17,122 @@ header{
     background-color: blueviolet;
 }
 
-h2{
+h2 {
     font-size: 30px;
     font-weight: 700;
     color: white;
-    text-transform:uppercase;
+    text-transform: uppercase;
     padding: 10px 30px;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     padding: 10px 30px;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 10px 0;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-@media only screen and (max-width: 887px){
-    header{
+@media only screen and (max-width: 887px) {
+    header {
         justify-content: center;
         align-items: center;
     }
-    .grid-container{
+
+    .grid-container {
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(6, auto);
     }
 }
 
-@media only screen and (max-width: 537px){
-    header{
+@media only screen and (max-width: 537px) {
+    header {
         justify-content: center;
         align-items: center;
     }
-    ul{
+
+    ul {
         flex-direction: column;
         flex-grow: 1;
         width: 100%;
     }
-    h2{
+
+    h2 {
         align-self: center;
     }
-    li{
+
+    li {
         margin: auto 50px;
         padding-top: 20px;
     }
-    .grid-container{
+
+    .grid-container {
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(12, auto);
     }
 }
 
-@media only screen and (min-width: 888px) and (max-width: 1099px){
-    .grid-container{
+@media only screen and (min-width: 888px) and (max-width: 1099px) {
+    .grid-container {
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(4, auto);
     }
 }
 
-@media only screen and (min-width: 1100px){
+@media only screen and (min-width: 1100px) {
 
-    .grid-container{
+    .grid-container {
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(3, auto);
     }
 
 }
 
-li{
-    margin : 0 10px
+li {
+    margin: 0 10px
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 400;
     border-radius: 15px;
-    padding : 10px 20px;
+    padding: 10px 20px;
 
 }
+
 a.active,
-a:hover{
+a:hover {
     color: blueviolet;
     background-color: aliceblue;
 
 }
 
+/*====================================== body =============================================== */
 
-body{
+
+body {
     display: flex;
     flex-direction: column;
 }
 
-.grid-container{
+/*====================================== grid with CARDs =============================================== */
+.grid-container {
     align-self: center;
     padding: 10px;
     background-color: rgb(61, 50, 82);
     width: 100%;
-    height : auto;
+    height: auto;
     display: grid;
-    
-    
+
+
 }
 
-.item{
+.item {
     background-color: rgb(254, 244, 255);
     width: auto;
     min-height: 400px;
@@ -134,55 +144,66 @@ body{
 
 
 
-.image{
+.image {
     width: 100%;
-    height : 66%;
+    height: 66%;
     background-position: center;
     background-size: cover;
 }
 
 /* background images */
-.image1{
+.image1 {
     background-image: url("1.jpg");
 }
-.image2{
+
+.image2 {
     background-image: url("2.jpg");
 }
-.image3{
+
+.image3 {
     background-image: url("3.jpg");
 }
-.image4{
+
+.image4 {
     background-image: url("4.jpg");
 }
-.image5{
+
+.image5 {
     background-image: url("5.jpg");
 }
-.image6{
+
+.image6 {
     background-image: url("6.jpg");
 }
-.image7{
+
+.image7 {
     background-image: url("7.jpg");
 }
-.image8{
+
+.image8 {
     background-image: url("8.jpg");
 }
-.image9{
+
+.image9 {
     background-image: url("9.jpg");
 }
-.image10{
+
+.image10 {
     background-image: url("10.jpg");
 }
-.image11{
+
+.image11 {
     background-image: url("11.jpg");
 }
-.image12{
+
+.image12 {
     background-image: url("12.jpg");
 }
 
 
 
 
-.Welcome{
+.Welcome {
     width: 100%;
     font-size: 20px;
     margin-left: 8px;
@@ -190,12 +211,12 @@ body{
     color: rgb(36, 36, 36);
 }
 
-.tag-container{
+.tag-container {
     display: flex;
     gap: 4px;
 }
 
-.tag{
+.tag {
     border-style: solid;
     border-radius: 10px;
     padding: 0 10px;
@@ -205,40 +226,44 @@ body{
     font-size: small;
 }
 
-.tag-1{
+.tag-1 {
     background-color: rgb(181, 255, 237);
     border-color: rgb(0, 161, 108);
-    
+
 }
-.tag-2{
+
+.tag-2 {
     background-color: rgb(255, 212, 212);
     border-color: rgb(161, 0, 0);
 }
-.tag-3{
+
+.tag-3 {
     background-color: rgb(213, 213, 255);
     border-color: rgb(11, 0, 161);
 }
 
-.description{
+.description {
     color: rgb(83, 83, 83);
     font-size: small;
     padding: 8px;
 }
 
-#blur-background{
+
+/*====================================== Full view CARDs =============================================== */
+
+
+#blur-background {
     width: 100%;
     height: 100vh;
     position: fixed;
     background-color: #ffffff10;
     backdrop-filter: blur(15px);
-    display:none;
+    display: none;
     transition-duration: 2s;
 }
 
 
-
-
-.full-view-1{
+.full-view-1 {
     width: 50%;
     height: 50vh;
     position: fixed;
@@ -246,81 +271,94 @@ body{
     align-self: center;
     justify-content: center;
     top: 25%;
-    left :25%;
+    left: 25%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: 0px 0px 100px black;
 }
-.full-image{
+
+.full-image {
     height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
 }
 
-.full-image-1{
+.full-image-1 {
     background-image: url("1.jpg");
 }
-.full-image-2{
+
+.full-image-2 {
     background-image: url("2.jpg");
 }
-.full-image-3{
+
+.full-image-3 {
     background-image: url("3.jpg");
 }
-.full-image-4{
+
+.full-image-4 {
     background-image: url("4.jpg");
 }
-.full-image-5{
+
+.full-image-5 {
     background-image: url("5.jpg");
 }
-.full-image-6{
+
+.full-image-6 {
     background-image: url("6.jpg");
 }
-.full-image-7{
+
+.full-image-7 {
     background-image: url("7.jpg");
 }
-.full-image-8{
+
+.full-image-8 {
     background-image: url("8.jpg");
 }
-.full-image-9{
+
+.full-image-9 {
     background-image: url("9.jpg");
 }
-.full-image-10{
+
+.full-image-10 {
     background-image: url("10.jpg");
 }
-.full-image-11{
+
+.full-image-11 {
     background-image: url("11.jpg");
 }
-.full-image-12{
+
+.full-image-12 {
     background-image: url("12.jpg");
 }
 
 
-.content{
+.content {
     display: flex;
     align-content: center;
     flex-direction: column;
-    justify-content: center ;
+    justify-content: center;
     height: 100%;
 }
 
 
-.full-title{
+.full-title {
     margin: 20px 0;
     text-align: center;
-    font-size:x-large;
+    font-size: x-large;
 }
 
-.full-tags{
+.full-tags {
     align-self: center;
 }
 
-.full-description{
+.full-description {
     text-align: center;
     margin: 8px 15px;
     color: rgb(63, 63, 63);
 }
-.btn{
+
+.btn {
     width: 100px;
     height: 30px;
     background-color: blueviolet;
@@ -333,8 +371,28 @@ body{
     cursor: pointer;
 }
 
-.full{
+.full {
     display: none;
 }
 
-   
+
+/*====================================== scroll bar =============================================== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #aeaeae;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #654294;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #472377;
+}
