@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Masmoudi</title>
     <link rel="stylesheet" href="flex-nav.css">
+    <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="blur-background" onclick="hide()">
     </div>
+    <div id="prev-card" class="next_prev" onclick="hide()"><i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div id="next-card" class="next_prev" onclick="hide()"><i class="fa-solid fa-arrow-right"></i>
+    </div>
+
 
     <header>
         <h2>Ahmed Masmoudi</h2>
@@ -403,8 +409,12 @@
         const card10 = document.getElementById("full-view-10");
         const card11 = document.getElementById("full-view-11");
         const card12 = document.getElementById("full-view-12");
+        const next = document.getElementById("next-card");
+        const prev = document.getElementById("prev-card");
         function blured(object) {
             background.style.display = "block";
+            next.style.display = "block";
+            prev.style.display = "block";
             if (object == document.getElementById("1")) {
                 card1.style.display = "block";
             }
@@ -446,6 +456,8 @@
         }
         function hide() {
             background.style.display = "none";
+            next.style.display = "none";
+            prev.style.display = "none";
             card1.style.display = "none";
             card2.style.display = "none";
             card3.style.display = "none";
@@ -460,6 +472,7 @@
             card12.style.display = "none";
         }
     </script>
+    
 </body>
 
 </html>

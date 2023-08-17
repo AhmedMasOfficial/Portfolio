@@ -396,3 +396,40 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #472377;
 }
+
+
+
+/*====================================== next/previous CARD button =============================================== */
+
+.next_prev{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.464);
+    position: fixed;
+    border-radius: 100%;
+    border-color: rgba(255, 255, 255, 0.753);
+    border-width: 3px;
+    border-style: solid;
+    display: none;
+    top: 43.5%;
+}
+
+#prev-card {
+    left: 10%;
+}
+
+#next-card {
+    right: 10%;
+}
+
+
+
+.fa-solid{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(40, 40, 40);
+    transform: translate(-50%, -50%);
+}
+
