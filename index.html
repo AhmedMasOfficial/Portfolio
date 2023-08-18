@@ -12,9 +12,9 @@
 <body>
     <div id="blur-background" onclick="hide()">
     </div>
-    <div id="prev-card" class="next_prev" onclick="to_prev()"><i class="fa-solid fa-arrow-left"></i>
+    <div id="prev-card" class="next_prev" onclick="to_prev()"><i class="fa-solid fa-arrow-left arrow"></i>
     </div>
-    <div id="next-card" class="next_prev" onclick="to_next()"><i class="fa-solid fa-arrow-right"></i>
+    <div id="next-card" class="next_prev" onclick="to_next()"><i class="fa-solid fa-arrow-right arrow"></i>
     </div>
 
 
@@ -174,6 +174,7 @@
                 quaerat magnam neque.
                 Voluptate.</div>
         </div>
+        <div class="item" id="createCard"><i class="fa-solid fa-plus"></i></div>
     </div>
 
     <!--Full Image (when you click on it)-->
@@ -514,8 +515,10 @@
 
 
         function createDirectLink(ch){
-            /*https://drive.google.com/file/d/1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0/view?usp=drive_link
-              https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0
+            /*  normal :
+                https://drive.google.com/file/d/1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0/view?usp=drive_link
+                direct :
+                https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0
             */
             const myArray = ch.split("/");
             return "https://drive.google.com/uc?export=download&id=" + myArray[myArray.lenght - 2];

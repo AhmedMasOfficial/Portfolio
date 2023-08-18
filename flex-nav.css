@@ -424,7 +424,7 @@ body {
 
 
 
-.fa-solid{
+.arrow{
     font-size: 50px;
     position: absolute;
     top: 50%;
@@ -433,3 +433,24 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+
+
+
+#createCard{
+    background-color: #ffffff43;
+    border-style: dashed;
+    border-color: rgb(255, 254, 254);
+    border-width: 3px;
+    position: relative;
+}
+
+
+.fa-plus{
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(195, 195, 195);
+    transform: translate(-50%, -50%);
+}
