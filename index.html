@@ -395,6 +395,19 @@
         </div>
     </div>
 
+    <!--=======================card form=================================-->
+    <div class="create-full">
+        <form>
+            <label>Enter image link (drive)</label><br>
+            <input class="create-image" type="text"><br>
+            <label>Enter Card title</label><br>
+            <input class="create-title" type="text"><br>
+            <label>Enter Card description</label><br>
+            <input class="create-description" type="text"><br>
+            <button type="submit" onclick="create_card()">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
 
     <script>
         const background = document.getElementById("blur-background");
@@ -488,33 +501,33 @@
             card12.style.display = "none";
         }
 
-        function to_next(){
-            t[current-1].style.display = "none";
+        function to_next() {
+            t[current - 1].style.display = "none";
             t[current].style.display = "block";
             prev.style.display = "block";
             current++;
-            if (current==12){
+            if (current == 12) {
                 next.style.display = "none";
             }
-            else{
+            else {
                 next.style.display = "block";
             }
         }
-        function to_prev(){
-            t[current-1].style.display = "none";
-            t[current-2].style.display = "block";
+        function to_prev() {
+            t[current - 1].style.display = "none";
+            t[current - 2].style.display = "block";
             next.style.display = "block";
             current--;
-            if (current==1){
+            if (current == 1) {
                 prev.style.display = "none";
             }
-            else{
+            else {
                 prev.style.display = "block";
             }
         }
 
 
-        function createDirectLink(ch){
+        function createDirectLink(ch) {
             /*  normal :
                 https://drive.google.com/file/d/1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0/view?usp=drive_link
                 direct :
@@ -523,8 +536,14 @@
             const myArray = ch.split("/");
             return "https://drive.google.com/uc?export=download&id=" + myArray[myArray.lenght - 2];
         }
+
+        function create_card(){
+            let image_url = createDirectLink(document.getElementsByClassName("create-image"));
+            let title = document.getElementsByClassName("create-title");
+            let description = document.getElementsByClassName("create-description");
+        }
     </script>
-    
+
 </body>
 
 </html>
