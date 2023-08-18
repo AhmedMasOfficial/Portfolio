@@ -511,6 +511,15 @@
                 prev.style.display = "block";
             }
         }
+
+
+        function createDirectLink(ch){
+            /*https://drive.google.com/file/d/1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0/view?usp=drive_link
+              https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0
+            */
+            const myArray = ch.split("/");
+            return "https://drive.google.com/uc?export=download&id=" + myArray[myArray.lenght - 2];
+        }
     </script>
     
 </body>
