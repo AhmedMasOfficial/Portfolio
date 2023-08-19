@@ -137,23 +137,26 @@ function open_creation() {
 }
 
 function create_card() {
-    let image_url = createDirectLink(document.querySelector(".create-image").innerText);
+    /*let image_url = createDirectLink(document.querySelector(".create-image").innerText);*/
+    let image_url = document.querySelector(".create-image").value;
     let title = document.getElementsByClassName("create-title");
     let description = document.getElementsByClassName("create-description");
     grid.removeChild(create_mini);
-    grid.innerHTML += `<div class="item item-12" id="12" onclick="blured(this)">
-            <div class="image image12"> </div>
-            <div class="Card-Title : Welcome">Card-Title : Welcome</div>
+    grid.innerHTML += `<div class="item item-12" id="13" onclick="blured(this)">
+            <div class="image image13"> </div>
+            <div class="Card-Title13">Card-Title : Welcome</div>
             <div class="tag-container">
                 <div class="tag tag-1">TAG 1</div>
                 <div class="tag tag-2">TAG 2</div>
                 <div class="tag tag-3">TAG 3</div>
             </div>
-            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi aut
+            <div class="description13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi aut
                 quaerat magnam neque.
                 Voluptate.</div>
             </div>`;
+    alert(image_url);
     create_full.style.display = "none";
     background.style.display = "none";
+    document.querySelector(".image13").style.backgroundImage = "url(${image_url})";
     grid.appendChild(create_mini);
 }
