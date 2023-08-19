@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Masmoudi</title>
-    <link rel="stylesheet" href="flex-nav.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
 </head>
 
@@ -29,7 +29,7 @@
         </ul>
     </header>
 
-    <div class="grid-container">
+    <div class="grid-container" id="grid-container">
         <div class="item item-1" id="1" onclick="blured(this)">
             <div class="image image1"> </div>
             <div class="Card-Title : Welcome">Card-Title : Welcome</div>
@@ -174,7 +174,7 @@
                 quaerat magnam neque.
                 Voluptate.</div>
         </div>
-        <div class="item" id="createCard"><i class="fa-solid fa-plus"></i></div>
+        <div class="item" id="createCard"  onclick="open_creation()"><i class="fa-solid fa-plus"></i></div>
     </div>
 
     <!--Full Image (when you click on it)-->
@@ -395,7 +395,7 @@
         </div>
     </div>
 
-    <!--=======================card form=================================-->
+    <!--=======================card form (full view)=================================-->
     <div class="create-full">
         <form>
             <label>Enter image link (drive)</label><br>
@@ -404,146 +404,12 @@
             <input class="create-title" type="text"><br>
             <label>Enter Card description</label><br>
             <input class="create-description" type="text"><br>
-            <button type="submit" onclick="create_card()">Submit</button>
+            <button type="button" onclick="create_card()">Submit</button>
             <button type="reset">Reset</button>
         </form>
     </div>
 
-    <script>
-        const background = document.getElementById("blur-background");
-        const card1 = document.getElementById("full-view-1");
-        const card2 = document.getElementById("full-view-2");
-        const card3 = document.getElementById("full-view-3");
-        const card4 = document.getElementById("full-view-4");
-        const card5 = document.getElementById("full-view-5");
-        const card6 = document.getElementById("full-view-6");
-        const card7 = document.getElementById("full-view-7");
-        const card8 = document.getElementById("full-view-8");
-        const card9 = document.getElementById("full-view-9");
-        const card10 = document.getElementById("full-view-10");
-        const card11 = document.getElementById("full-view-11");
-        const card12 = document.getElementById("full-view-12");
-        var next = document.getElementById("next-card");
-        var prev = document.getElementById("prev-card");
-        var t = document.getElementsByClassName("full");
-        function blured(object) {
-            background.style.display = "block";
-            next.style.display = "block";
-            prev.style.display = "block";
-            if (object == document.getElementById("1")) {
-                card1.style.display = "block";
-                prev.style.display = "none";
-                current = 1;
-            }
-            if (object == document.getElementById("2")) {
-                card2.style.display = "block";
-                current = 2;
-            }
-            if (object == document.getElementById("3")) {
-                card3.style.display = "block";
-                current = 3;
-            }
-            if (object == document.getElementById("4")) {
-                card4.style.display = "block";
-                current = 4;
-            }
-            if (object == document.getElementById("5")) {
-                card5.style.display = "block";
-                current = 5;
-            }
-            if (object == document.getElementById("6")) {
-                card6.style.display = "block";
-                current = 6;
-            }
-            if (object == document.getElementById("7")) {
-                card7.style.display = "block";
-                current = 7;
-            }
-            if (object == document.getElementById("8")) {
-                card8.style.display = "block";
-                current = 8;
-            }
-            if (object == document.getElementById("9")) {
-                card9.style.display = "block";
-                current = 9;
-            }
-            if (object == document.getElementById("10")) {
-                card10.style.display = "block";
-                current = 10;
-            }
-            if (object == document.getElementById("11")) {
-                card11.style.display = "block";
-                current = 11;
-            }
-            if (object == document.getElementById("12")) {
-                card12.style.display = "block";
-                next.style.display = "none";
-                current = 12;
-            }
-
-
-        }
-        function hide() {
-            background.style.display = "none";
-            next.style.display = "none";
-            prev.style.display = "none";
-            card1.style.display = "none";
-            card2.style.display = "none";
-            card3.style.display = "none";
-            card4.style.display = "none";
-            card5.style.display = "none";
-            card6.style.display = "none";
-            card7.style.display = "none";
-            card8.style.display = "none";
-            card9.style.display = "none";
-            card10.style.display = "none";
-            card11.style.display = "none";
-            card12.style.display = "none";
-        }
-
-        function to_next() {
-            t[current - 1].style.display = "none";
-            t[current].style.display = "block";
-            prev.style.display = "block";
-            current++;
-            if (current == 12) {
-                next.style.display = "none";
-            }
-            else {
-                next.style.display = "block";
-            }
-        }
-        function to_prev() {
-            t[current - 1].style.display = "none";
-            t[current - 2].style.display = "block";
-            next.style.display = "block";
-            current--;
-            if (current == 1) {
-                prev.style.display = "none";
-            }
-            else {
-                prev.style.display = "block";
-            }
-        }
-
-
-        function createDirectLink(ch) {
-            /*  normal :
-                https://drive.google.com/file/d/1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0/view?usp=drive_link
-                direct :
-                https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0
-            */
-            const myArray = ch.split("/");
-            return "https://drive.google.com/uc?export=download&id=" + myArray[myArray.lenght - 2];
-        }
-
-        function create_card(){
-            let image_url = createDirectLink(document.getElementsByClassName("create-image"));
-            let title = document.getElementsByClassName("create-title");
-            let description = document.getElementsByClassName("create-description");
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
