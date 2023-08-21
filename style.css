@@ -121,13 +121,23 @@ body {
 }
 
 /*====================================== grid with CARDs =============================================== */
+.container{
+    display: flex;
+}
+
 .grid-container {
-    align-self: center;
     padding: 10px;
     background-color: rgb(61, 50, 82);
-    width: 100%;
+    width: 80%;
     height: auto;
     display: grid;
+}
+
+.side-div{
+    padding: 10px;
+    width: 20%;
+    background-color: rgb(212, 198, 226);
+    height: auto;
 }
 
 .item {
