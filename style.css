@@ -54,21 +54,21 @@ ul {
     header {
         justify-content: center;
         align-items: center;
+        
     }
 
-    ul {
-        flex-direction: column;
+    .ul-header {
+        flex-direction: row;
         flex-grow: 1;
         width: 100%;
     }
 
-    h2 {
+    .h2-header {
         align-self: center;
     }
 
-    li {
-        margin: auto 50px;
-        padding-top: 20px;
+    .li-header {
+        margin: auto;   
     }
 
     .grid-container {
@@ -93,9 +93,7 @@ ul {
 
 }
 
-li {
-    margin: 0 10px
-}
+
 
 a {
     text-decoration: none;
@@ -507,3 +505,14 @@ input [type=text]:focus
 
 
 */
+
+
+.side-img{
+    aspect-ratio: 1 / 1;
+    width: 80%;
+    max-height: 100%;
+    border-radius: 50%;
+    background-image: url("https://drive.google.com/uc?export=download&id=1dv9K8MJmLw7oMr0xs6HFcsAT6xGQlsFG");
+    background-position: center;
+    background-size: cover;
+}
