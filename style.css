@@ -9,6 +9,8 @@
 /*====================================== header =============================================== */
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     width: 100%;
     flex-wrap: wrap;
     flex-grow: 1;
@@ -136,7 +138,7 @@ body {
 .side-div{
     padding: 10px;
     width: 20%;
-    background-color: rgb(212, 198, 226);
+    background-color: rgb(245, 241, 249);
     height: auto;
 }
 
@@ -500,3 +502,8 @@ input[type=text]{
 
 /*
 input [type=text]:focus
+
+
+
+
+*/

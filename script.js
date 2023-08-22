@@ -142,8 +142,8 @@ function create_card() {
     let title = document.getElementsByClassName("create-title");
     let description = document.getElementsByClassName("create-description");
     grid.removeChild(create_mini);
-    grid.innerHTML += `<div class="item item-12" id="12" onclick="blured(this)">
-            <div class="image image12"> </div>
+    grid.innerHTML += `<div class="item" id="13" onclick="blured(this)">
+            <div class="image image13"> </div>
             <div class="Card-Title : Welcome">Card-Title : Welcome</div>
             <div class="tag-container">
                 <div class="tag tag-1">TAG 1</div>
@@ -154,9 +154,14 @@ function create_card() {
                 quaerat magnam neque.
                 Voluptate.</div>
             </div>`;
-    /*alert(image_url);*/
     create_full.style.display = "none";
     background.style.display = "none";
-    /*document.querySelector(".image13").style.backgroundImage = "url(${image_url})";*/
+    document.querySelector(".image13").style.backgroundImage = `url("${image_url}")`;
     grid.appendChild(create_mini);
 }
+
+
+
+
+
+
