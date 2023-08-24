@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
     transition: all .3s;
     box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ header {
     background-color: blueviolet;
 }
 
-h2 {
+.h2-header {
     font-size: 30px;
     font-weight: 700;
     color: white;
@@ -27,7 +29,7 @@ h2 {
     padding: 10px 30px;
 }
 
-ul {
+.ul-header {
     list-style: none;
     display: flex;
     padding: 10px 30px;
@@ -36,6 +38,10 @@ ul {
     margin: 10px 0;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.li-header{
+    margin: 0 10px;
 }
 
 @media only screen and (max-width: 887px) {
@@ -95,7 +101,7 @@ ul {
 
 
 
-a {
+.a-header {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -106,7 +112,7 @@ a {
 }
 
 a.active,
-a:hover {
+.a-header:hover {
     color: blueviolet;
     background-color: aliceblue;
 
@@ -151,17 +157,17 @@ body {
 }
 
 
-
-.image {
+.image{
+    aspect-ratio: 1/1;
     width: 100%;
-    height: 66%;
     background-position: center;
     background-size: cover;
+    
 }
-
 /* background images */
 .image1 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0");
+    /* background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0"); */
+    background-image: url("1.jpg");
 }
 
 .image2 {
@@ -208,7 +214,12 @@ body {
     background-image: url("https://drive.google.com/uc?export=download&id=1ZT3rYfNylqTlBhVUIkd2rxEMsZ7jFEGL");
 }
 
-
+.image:hover{
+    filter: brightness(0.6);
+    transform: scale(1.1);
+    transform: rotate(5deg);
+    
+}
 
 
 .Welcome {
@@ -293,7 +304,8 @@ body {
 }
 
 .full-image-1 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0");
+    background-image: url("1.jpg");
+    /* background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0"); */
 }
 
 .full-image-2 {
@@ -445,7 +457,7 @@ body {
 }
 
 
-
+/*====================================== create card =============================================== */
 
 
 #createCard{
@@ -507,12 +519,40 @@ input [type=text]:focus
 */
 
 
+/*====================================== side div =============================================== */
+
+
+.side-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .side-img{
     aspect-ratio: 1 / 1;
     width: 80%;
     max-height: 100%;
     border-radius: 50%;
-    background-image: url("https://drive.google.com/uc?export=download&id=1dv9K8MJmLw7oMr0xs6HFcsAT6xGQlsFG");
+    /*background-image: url("https://drive.google.com/uc?export=download&id=1NdgEE-RUKQhpFE8nY4sc2xA01rqVWEoF");*/
+    background-image: url("image.png");
     background-position: center;
     background-size: cover;
+}
+
+.hr-side{
+    border-color:#654294;
+    width: 100%;
+}
+
+
+.side-name{
+    font-size: medium;
+    color: #472377;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skill-list{
+    list-style: none;
+
 }
