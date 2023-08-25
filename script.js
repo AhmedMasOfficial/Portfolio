@@ -15,7 +15,7 @@ var next = document.getElementById("next-card");
 var prev = document.getElementById("prev-card");
 var t = document.getElementsByClassName("full");
 const grid = document.querySelector(".grid-container");
-const create_mini = document.querySelector("#createCard")
+const create_mini = document.querySelector("#createCard");
 const create_full = document.querySelector(".create-full");
 
 

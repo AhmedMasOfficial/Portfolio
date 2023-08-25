@@ -166,8 +166,7 @@ body {
 }
 /* background images */
 .image1 {
-    /* background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0"); */
-    background-image: url("1.jpg");
+    background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0");
 }
 
 .image2 {
@@ -304,8 +303,7 @@ body {
 }
 
 .full-image-1 {
-    background-image: url("1.jpg");
-    /* background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0"); */
+    background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0");
 }
 
 .full-image-2 {
@@ -526,6 +524,8 @@ input [type=text]:focus
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .side-img{
@@ -533,8 +533,8 @@ input [type=text]:focus
     width: 80%;
     max-height: 100%;
     border-radius: 50%;
-    /*background-image: url("https://drive.google.com/uc?export=download&id=1NdgEE-RUKQhpFE8nY4sc2xA01rqVWEoF");*/
-    background-image: url("image.png");
+    background-image: url("https://drive.google.com/uc?export=download&id=1NdgEE-RUKQhpFE8nY4sc2xA01rqVWEoF");
+
     background-position: center;
     background-size: cover;
 }
@@ -548,11 +548,19 @@ input [type=text]:focus
 .side-name{
     font-size: medium;
     color: #472377;
-    font-style: oblique;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-style: oblique; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-weight: 100;
+    margin: 10px 0px;
 }
 
 .skill-list{
     list-style: none;
 
+}
+.side-paragraph{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    font-weight: 300;
+    margin: 5px 0px;
 }
