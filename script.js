@@ -137,8 +137,8 @@ function open_creation() {
 }
 
 function create_card() {
-    /*let image_url = createDirectLink(document.querySelector(".create-image").innerText);*/
-    let image_url = document.querySelector(".create-image").value;
+    let image_url = createDirectLink(document.querySelector(".create-image").innerText);
+    // let image_url = document.querySelector(".create-image").value;
     let title = document.getElementsByClassName("create-title");
     let description = document.getElementsByClassName("create-description");
     grid.removeChild(create_mini);
