@@ -139,7 +139,7 @@ function open_creation() {
 }
 
 function create_card() {
-    let image_url = createDirectLink(document.querySelector(".create-image").innerText);
+    let image_url = createDirectLink(document.querySelector(".create-image").value);
     // let image_url = document.querySelector(".create-image").value;
     let title = document.getElementsByClassName("create-title");
     let description = document.getElementsByClassName("create-description");
@@ -163,10 +163,29 @@ function create_card() {
 }
 
 
-function paste(){
+function paste() {
     const paste = document.querySelector('.create-image');
     navigator.clipboard.readText().then((clipText) => (paste.value = clipText));
 }
 
 
 
+// //=============|| Side Bar Sticky ||====================
+// let sidebar = document.getElementsByClassName("side-div")[0];
+// let sidebar_content = document.getElementsByClassName("content-wrapper")[0];
+
+// window.onscroll = () => {
+//     let scrollTop = window.scrollY;
+//     let viewportHeight = window.innerHeight;
+//     let sidebarTop = sidebar.getBoundingClientRect().top;
+//     let contentHeight = sidebar_content.getBoundingClientRect().height;
+
+//     if (scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+//         sidebar_content.style.transform = `translateY(-${(contentHeight - viewportHeight + sidebarTop)}px)`;
+//         sidebar_content.style.position = "fixed";
+//     }
+//     else {
+//         sidebar_content.style.transform = "";
+//         sidebar_content.style.position = "";
+//     }
+// };
