@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Masmoudi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
 </head>
@@ -23,27 +26,28 @@
 
         <ul class="ul-header">
             <li class="li-header"><a class="a-header" href="#">Home</a></li>
-            <li class="li-header"><a class="active a-header" href="#">Skills</a></li>
-            <li class="li-header"><a href="#" class="a-header">Services</a></li>
+            <li class="li-header"><a class="active a-header" href="#">Work</a></li>
+            <li class="li-header"><a href="#" class="a-header">Skills</a></li>
             <li class="li-header"><a href="#" class="a-header">About</a></li>
-        </ul>   
+        </ul>
     </header>
     <div class="container">
         <div class="side-div">
             <div class="side-img"></div>
             <p class="side-name">Ahmed Masmoudi</p>
-            <p class="side-paragraph">A professional Designer and Developper with more than 90 years experiance. coding
+            <p class="side-paragraph">A professional Designer-Developper. more than 90 years experiance. coding
                 since born and can do any task you ask!</p>
-            <a class="a-side" href="#">About me</a>
+            <a class="about-side" href="#">About me</a>
             <hr class="hr-side">
+            <p class="side-name">Skills List</p>
             <ul class="skill-list">
-                <li class="Design">Graphic Design</li>
-                <li class="video">Video Editing</li>
-                <li class="web">Web development</li>
-                <li class="mobile">Mobile development</li>
-                <li class="desktop">Desktop development</li>
-                <li class="game">Game development</li>
-                <li class="ai">Artificial Intelligence</li>
+                <li class="li-side active">Graphic Design</li>
+                <li class="li-side">Video Editing</li>
+                <li class="li-side">Web development</li>
+                <li class="li-side">Mobile development</li>
+                <li class="li-side">Desktop development</li>
+                <li class="li-side">Game development</li>
+                <li class="li-side">Artificial Intelligence</li>
             </ul>
         </div>
 
@@ -419,12 +423,15 @@
     <div class="create-full">
         <form id="create-form">
             <div><label>Enter image link (drive)</label><br>
-            <input class="create-image" id="create-image" type="text">
-            <div class="create-paste-btn" onclick="paste()">Paste</div></div><br>
+                <input class="create-image" id="create-image" type="text">
+                <div class="create-paste-btn" onclick="paste()">Paste</div>
+            </div><br>
             <div><label>Enter Card title</label><br>
-            <input class="create-title" type="text"></div><br>
+                <input class="create-title" type="text">
+            </div><br>
             <div><label>Enter Card description</label><br>
-            <input class="create-description" type="text"></div><br>
+                <input class="create-description" type="text">
+            </div><br>
             <button type="button" class="create-btn" onclick="create_card()">Create Card</button>
         </form>
     </div>
