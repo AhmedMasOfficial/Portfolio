@@ -133,7 +133,8 @@ body {
 
 .grid-container {
     padding: 10px;
-    background-color: rgb(61, 50, 82);
+    background: rgb(9,0,87);
+background: linear-gradient(180deg, rgb(27, 0, 49) 0%, rgb(48, 0, 104) 100%);
     width: 80%;
     height: auto;
     display: grid;
@@ -486,13 +487,14 @@ body {
     top: 50%;
     transform: translate(-50%,-50%);
     width: 40%;
-    height: 80vh;
+    height: 60vh;
     display: none;
 }
 form{
     width: 100%;
     height: 100%;
-    background-color: rgb(74, 45, 95);
+    background: rgb(9,0,87);
+    background: linear-gradient(180deg, rgba(9,0,87,1) 0%, rgb(62, 0, 133) 100%);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -504,12 +506,17 @@ form{
 input[type=text]{
     padding: 12px 20px;
     width: 100%;
-    margin: 8px 0px;
-    background-color: rgb(212, 190, 230);
+    margin: 4px 0px;
+    background-color: rgb(222, 206, 235);
 }
 
+#create-image{
+    width: 80%;
+}
 
-
+label{
+    padding: 0;
+}
 
 input [type=text]:focus{
     border-color: #ffffff;
@@ -518,8 +525,24 @@ input [type=text]:focus{
 }
 
 
+.create-btn, .create-paste-btn {
+    padding: 15px;
+    color: #472377;
+    background-color: #ffffff;
+    font-size: x-large;
+}
 
+.create-paste-btn{
+    font-size: small;
+    display: inline;
+    padding: 15px 5.5%;
+    text-align: center;
+}
 
+.create-btn:hover, .create-paste-btn:hover{
+    background-color: #d1d1d1;
+    color: #4a00ac;
+}
 
 
 

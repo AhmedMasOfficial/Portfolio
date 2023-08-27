@@ -17,6 +17,7 @@ var t = document.getElementsByClassName("full");
 const grid = document.querySelector(".grid-container");
 const create_mini = document.querySelector("#createCard");
 const create_full = document.querySelector(".create-full");
+const create_form = document.getElementById("create-form");
 
 
 function blured(object) {
@@ -93,6 +94,7 @@ function hide() {
     card11.style.display = "none";
     card12.style.display = "none";
     create_full.style.display = "none";
+    create_form.reset();
 }
 
 function to_next() {
@@ -161,7 +163,10 @@ function create_card() {
 }
 
 
-
+function paste(){
+    const paste = document.querySelector('.create-image');
+    navigator.clipboard.readText().then((clipText) => (paste.value = clipText));
+}
 
 
 

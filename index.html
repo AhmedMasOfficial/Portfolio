@@ -417,14 +417,15 @@
 
     <!--=======================card form (full view)=================================-->
     <div class="create-full">
-        <form>
-            <label>Enter image link (drive)</label><br>
-            <input class="create-image" type="text"><br>
-            <label>Enter Card title</label><br>
-            <input class="create-title" type="text"><br>
-            <label>Enter Card description</label><br>
-            <input class="create-description" type="text"><br>
-            <button type="button" onclick="create_card()">Submit</button>
+        <form id="create-form">
+            <div><label>Enter image link (drive)</label><br>
+            <input class="create-image" id="create-image" type="text">
+            <div class="create-paste-btn" onclick="paste()">Paste</div></div><br>
+            <div><label>Enter Card title</label><br>
+            <input class="create-title" type="text"></div><br>
+            <div><label>Enter Card description</label><br>
+            <input class="create-description" type="text"></div><br>
+            <button type="button" class="create-btn" onclick="create_card()">Create Card</button>
         </form>
     </div>
 
