@@ -169,23 +169,19 @@ function paste() {
 }
 
 
+//============== skill list load ==================//
 
-// //=============|| Side Bar Sticky ||====================
-// let sidebar = document.getElementsByClassName("side-div")[0];
-// let sidebar_content = document.getElementsByClassName("content-wrapper")[0];
+const skills = document.querySelectorAll("li-side");
+let current_skill = 0;
 
-// window.onscroll = () => {
-//     let scrollTop = window.scrollY;
-//     let viewportHeight = window.innerHeight;
-//     let sidebarTop = sidebar.getBoundingClientRect().top;
-//     let contentHeight = sidebar_content.getBoundingClientRect().height;
+// skills.addEventListener("click", function(this){
+//     this.classList.add("active");
+// });
 
-//     if (scrollTop >= contentHeight - viewportHeight + sidebarTop) {
-//         sidebar_content.style.transform = `translateY(-${(contentHeight - viewportHeight + sidebarTop)}px)`;
-//         sidebar_content.style.position = "fixed";
-//     }
-//     else {
-//         sidebar_content.style.transform = "";
-//         sidebar_content.style.position = "";
-//     }
-// };
+
+function setActive(obj){
+    skills.forEach(element => {
+        element.classList.remove("active");
+    });
+    obj.classList.add("active");
+}
