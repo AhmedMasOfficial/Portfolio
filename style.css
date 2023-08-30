@@ -52,8 +52,8 @@ header {
     }
 
     .grid-container {
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 
@@ -79,23 +79,23 @@ header {
     }
 
     .grid-container {
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(12, auto);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
 @media only screen and (min-width: 888px) and (max-width: 1099px) {
     .grid-container {
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
 
 @media only screen and (min-width: 1100px) {
 
     .grid-container {
-        grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
 }
@@ -121,23 +121,21 @@ a.active,
 
 /*====================================== body =============================================== */
 
-
-body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+body{
+    background-color: rgb(245, 241, 249);
 }
+
 /*====================================== grid with CARDs =============================================== */
 .container{
     display: flex;
+    flex-direction: rows;
 }
 
 .grid-container {
     padding: 10px;
     background: rgb(9,0,87);
     background: linear-gradient(180deg, rgb(27, 0, 49) 0%, rgb(48, 0, 104) 100%);
-    width: 80%;
-    height: auto;
+    width: 100%;
     display: grid;
 }
 
@@ -145,132 +143,32 @@ body {
     padding: 10px;
     width: 20%;
     background-color: rgb(245, 241, 249);
-    height: auto;
 }
+
+.section{
+    width: 80%;
+    display: none;
+}
+
+.design{
+    display: block;
+}
+
 
 .item {
-    background-color: rgb(254, 244, 255);
-    width: auto;
-    min-height: 400px;
-    margin: 10px;
-
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.image{
-    aspect-ratio: 1/1;
+    padding: 10px;
     width: 100%;
+    aspect-ratio: 1/1;
     background-position: center;
     background-size: cover;
-    
-}
-/* background images */
-.image1 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1qvVlqyl3qi6vXSUGVnYVD2nsyYM-4vC0");
 }
 
-.image2 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1Nkf-XpllfNBMrCwDuD1iefTcN2LtJfnc");
-}
-
-.image3 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1uK_-GOTeT_rW-8KBo2UToun3n4p9dLAo");
-}
-
-.image4 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1WfZGn_fSsnP69DW4Sql678yKxaieH99R");
-}
-
-.image5 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1Vef7TbkvNgfGJolnONx_SBVM3LGpYAiE");
-}
-
-.image6 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1fBJjnNxuCXmmCltNsVJzUGE4HXxxZ_KD");
-}
-
-.image7 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1_GXfD-EQP-IxW1uP5_fRjr-br_NyOhAE");
-}
-
-.image8 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1BoTJiFY7cRXKJSeM41-DJPS6Co3p8aRE");
-}
-
-.image9 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1016mqAIgcQA_5GQ5idiO9xOIlaoeLVnu");
-}
-
-.image10 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1Rx39KqKVAkpnpW4Z7SzTIh5Xh7yYQNkW");
-}
-
-.image11 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1jW0Gn4n6B-oJOwUa-kc2_KoePftlO5ej");
-}
-
-.image12 {
-    background-image: url("https://drive.google.com/uc?export=download&id=1ZT3rYfNylqTlBhVUIkd2rxEMsZ7jFEGL");
-}
-
-.image:hover{
+.item:hover{
     filter: brightness(0.6);
-    transform: scale(1.1);
     transform: rotate(5deg);
     
 }
 
-
-.Welcome {
-    width: 100%;
-    font-size: 20px;
-    margin-left: 8px;
-    font-weight: 500;
-    color: rgb(36, 36, 36);
-}
-
-.tag-container {
-    display: flex;
-    gap: 4px;
-}
-
-.tag {
-    border-style: solid;
-    border-radius: 10px;
-    padding: 0 10px;
-    margin: 4px 0 0 6px;
-    border-width: 0.3px;
-    color: rgb(66, 66, 66);
-    font-size: small;
-}
-
-.tag-1 {
-    background-color: rgb(181, 255, 237);
-    border-color: rgb(0, 161, 108);
-
-}
-
-.tag-2 {
-    background-color: rgb(255, 212, 212);
-    border-color: rgb(161, 0, 0);
-}
-
-.tag-3 {
-    background-color: rgb(213, 213, 255);
-    border-color: rgb(11, 0, 161);
-}
-
-.description {
-    color: rgb(83, 83, 83);
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 0;
-    font-weight: 500;
-    padding: 8px;
-    margin: 0 5px;
-}
 
 
 /*====================================== Full view CARDs =============================================== */
@@ -448,8 +346,6 @@ body {
     right: 10%;
 }
 
-
-
 .arrow{
     font-size: 50px;
     position: absolute;
@@ -560,7 +456,7 @@ input [type=text]:focus{
     align-items: center;
     text-align: center;
     /* height: fit-content; */
-    position: relative;
+    /* position: relative; */
 }
 
 .side-img{
@@ -647,7 +543,10 @@ input [type=text]:focus{
 .li-side.active{
     /* background-color: #5300c0; */
     background: linear-gradient(0deg, rgb(53, 0, 97) 0%, blueviolet 100%);
-    box-shadow: none;
+}
+
+.li-side.empty{
+    background-color: #888888;
 }
 
 .li-side:hover{
@@ -656,4 +555,8 @@ input [type=text]:focus{
 
 p.side-name{
     font-size: x-large;
+}
+
+.li-side.empty:hover{
+    background-color: #888888;
 }
