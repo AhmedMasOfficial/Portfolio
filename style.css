@@ -48,19 +48,12 @@ header {
 @media only screen and (max-width: 887px) {
     header {
         justify-content: center;
-        align-items: center;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
     }
 }
 
 @media only screen and (max-width: 537px) {
     header {
         justify-content: center;
-        align-items: center;
         
     }
 
@@ -77,28 +70,8 @@ header {
     .li-header {
         margin: auto;   
     }
-
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
 }
 
-@media only screen and (min-width: 888px) and (max-width: 1099px) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
-
-@media only screen and (min-width: 1100px) {
-
-    .grid-container {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-}
 
 
 
@@ -122,27 +95,45 @@ a.active,
 /*====================================== body =============================================== */
 
 body{
-    background-color: rgb(245, 241, 249);
+    background-color: rgb(0, 0, 0);
+    position: relative;
 }
 
 /*====================================== grid with CARDs =============================================== */
 .container{
     display: flex;
-    flex-direction: rows;
+}
+
+.backgroundColor{
+    width: 100%;
+    display: inline;
+    background: rgb(9,0,87);
+    background: linear-gradient(180deg, rgb(27, 0, 49) 0%, rgb(48, 0, 104) 100%);
+    height: 100vh;
+    position:fixed;
+    z-index: -2;
+}
+
+.backgroundSide{
+    width: 20%;
+    display: inline;
+    background-color: rgb(245, 241, 249);
+    height: 100vh;
+    position:fixed;
+    z-index: -2;
 }
 
 .grid-container {
-    padding: 10px;
-    background: rgb(9,0,87);
-    background: linear-gradient(180deg, rgb(27, 0, 49) 0%, rgb(48, 0, 104) 100%);
-    width: 100%;
+    padding: 15px;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+
 }
 
 .side-div{
     padding: 10px;
     width: 20%;
-    background-color: rgb(245, 241, 249);
 }
 
 .section{
@@ -159,7 +150,6 @@ body{
 }
 
 .item {
-    padding: 10px;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -174,8 +164,6 @@ body{
 
 .item:hover{
     filter: brightness(0.6);
-    transform: rotate(5deg);
-    
 }
 
 
@@ -365,97 +353,6 @@ body{
     
 }
 
-
-/*====================================== create card =============================================== */
-
-
-#createCard{
-    background-color: #ffffff43;
-    border-style: dashed;
-    border-color: rgb(255, 254, 254);
-    border-width: 3px;
-    position: relative;
-}
-
-
-.fa-plus{
-    font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: rgb(195, 195, 195);
-    transform: translate(-50%, -50%);
-}
-
-
-
-.create-full{
-    position: fixed;
-    z-index: 2;
-    background-color: white;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width: 40%;
-    height: 60vh;
-    display: none;
-}
-form{
-    width: 100%;
-    height: 100%;
-    background: rgb(9,0,87);
-    background: linear-gradient(180deg, rgba(9,0,87,1) 0%, rgb(62, 0, 133) 100%);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    font-size: x-large;
-}
-
-input[type=text]{
-    padding: 12px 20px;
-    width: 100%;
-    margin: 4px 0px;
-    background-color: rgb(222, 206, 235);
-}
-
-#create-image{
-    width: 80%;
-}
-
-label{
-    padding: 0;
-}
-
-input [type=text]:focus{
-    border-color: #ffffff;
-    border-style: double;
-    outline: transparent;
-}
-
-
-.create-btn, .create-paste-btn {
-    padding: 15px;
-    color: #472377;
-    background-color: #ffffff;
-    font-size: x-large;
-}
-
-.create-paste-btn{
-    font-size: small;
-    display: inline;
-    padding: 15px 5.5%;
-    text-align: center;
-}
-
-.create-btn:hover, .create-paste-btn:hover{
-    background-color: #d1d1d1;
-    color: #4a00ac;
-}
-
-
-
 /*====================================== side div =============================================== */
 
 
@@ -464,8 +361,7 @@ input [type=text]:focus{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* height: fit-content; */
-    /* position: relative; */
+    height: 100vh;
 }
 
 .side-img{
@@ -473,7 +369,7 @@ input [type=text]:focus{
     width: 80%;
     max-height: 100%;
     border-radius: 50%;
-    background-image: url("https://drive.google.com/uc?export=download&id=1NdgEE-RUKQhpFE8nY4sc2xA01rqVWEoF");
+    /* background-image: url("https://drive.google.com/uc?export=download&id=1NdgEE-RUKQhpFE8nY4sc2xA01rqVWEoF"); */
     background-position: center;
     background-size: cover;
 }
@@ -545,8 +441,6 @@ input [type=text]:focus{
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
-    /* box-shadow: inset 0 0 10px #2a203679; */
-
 }
 
 .li-side.active{
