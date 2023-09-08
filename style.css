@@ -474,4 +474,30 @@ p.side-name{
 
 .myInfo{
     display: flex;
+    flex-direction: row;
+    height: 100vh;
+    flex-wrap: wrap;
 }
+
+
+.infoParagraph{
+    background-color: aqua;
+    width: 50%;
+}
+.myImageContainer{
+    width: 50%;
+    background-color: blue;
+}
+.myImage{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url(images/ahmed_mas\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 15%;
+}
+/* 
+.myImage{
+    object-fit: cover;
+    position: absolute;
+} */
