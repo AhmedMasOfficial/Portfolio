@@ -246,5 +246,64 @@ function hide() {
 
 
 
+function blured_video(object, src){
+    var source = src;
+    full.innerHTML = `<video controls autoplay width="1000" height="500">
+    <source src="${source}" type="video/mp4">
+</video>`;
+    console.log(src);
+    full.style.display = "block";
+    background.style.display = "block";
+    next.style.display = "block";
+    prev.style.display = "block";
 
+    for (let i = 0; i < items.length; i++) {
+        if (source == items[i].src) {
+            current = i;
+            break;
+        }
+    }
+
+    // if (current == 0) {
+    //     prev.style.display = "none";
+    // }
+    // else {
+    //     prev.style.display = "block";
+    // }
+
+    // if (current + 1 == items.length) {
+    //     next.style.display = "none";
+    // }
+    // else {
+    //     next.style.display = "block";
+    // }
+
+}
+
+function to_next() {
+    prev.style.display = "block";
+    source = items[current + 1].src;
+    full.style.backgroundImage = `url("${source}")`;
+    current++;
+
+    if (current + 1 == items.length) {
+        next.style.display = "none";
+    }
+    else {
+        next.style.display = "block";
+    }
+}
+
+function to_prev() {
+    next.style.display = "block";
+    source = items[current - 1].src;
+    full.style.backgroundImage = `url("${source}")`;
+    current--;
+    if (current == 0) {
+        prev.style.display = "none";
+    }
+    else {
+        prev.style.display = "block";
+    }
+}
 
