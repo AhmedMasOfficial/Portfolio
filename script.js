@@ -248,7 +248,7 @@ function hide() {
 
 function blured_video(object, src){
     var source = src;
-    full.innerHTML = `<video controls autoplay width="1000" height="500">
+    full.innerHTML = `<video controls width="1000" height="500">
     <source src="${source}" type="video/mp4">
 </video>`;
     console.log(src);
