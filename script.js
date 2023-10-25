@@ -186,6 +186,12 @@ function hide() {
 // }
 
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+//create design Items and tables
+////////////////////////////////////////////////////////////////////////
+
 const grid_design = document.querySelector(".grid-container-design");
 let item_image = ["images/IG-1.png","images/IG-2.png","images/IG-3.png", "images/IG-4-3.png","images/pic1-2.png", "images/pic2-1.png","images/insta.png", "images/posts.ai_1200_630_px_1500_1500_px_1.png",
     "images/340653563_949680539392767_4660127515563206705_n.webp",
@@ -280,6 +286,8 @@ const grid_video = document.querySelector(".grid-container-video");
 
 let video_links = ["https://drive.google.com/file/d/1GbzRTXswwPC4PtnFO50V2boMbpjk4WHR/preview",
     "https://drive.google.com/file/d/1oCNEdWflL9xfnK-8C6MllR46-fj3KaVI/preview",
+    "https://drive.google.com/file/d/12G-_lUy4pgdfkOJOudA_rutYyKLq2tWR/preview",
+    "https://drive.google.com/file/d/1nNBqdKwA57J3CzIuGN75MFhoMa6On6vl/preview",
     "https://drive.google.com/file/d/1mrMxbGyRKBSGDQ7Wb7SFF3pbH4yJlDAW/preview",
     "https://drive.google.com/file/d/1wXHQGfHHFYQo7qeqEmB3TvKGjsQq8vP6/preview",
     "https://drive.google.com/file/d/15LB2BAsFTiqxuI07hT2k4owODvKqyC6d/preview"
@@ -287,6 +295,8 @@ let video_links = ["https://drive.google.com/file/d/1GbzRTXswwPC4PtnFO50V2boMbpj
 
 let video_thubnails = ["Video/Screenshot 2023-08-30 185101.png",
     "Video/Screenshot 2023-08-30 173808.png",
+    "Video/Screenshot 2023-10-25 225019.png",
+    "Video/Screenshot 2023-10-25 230528.png",
     "Video/Screenshot 2023-08-30 184959.png",
     "Video/Screenshot 2023-08-30 184828.png",
     "Video/Screenshot 2023-08-30 184920.png"
