@@ -1,15 +1,8 @@
-////// importing the js module that contains the json data
-// import videoModule from './Untitled-1.js';
-import { tt } from './Untitled-1.js';
-console.log(tt);
-const vid_array = tt;
-console.log(vid_array);
-
 const background = document.getElementById("blur-background");
 var next = document.getElementById("next-card");
 var prev = document.getElementById("prev-card");
 
-const grid = document.querySelector(".grid-container");
+const grid_video = document.querySelector(".grid-container-video");
 const design_section = document.querySelector(".design");
 const video_section = document.querySelector(".video");
 const design3d_section = document.querySelector(".design3d");
@@ -49,6 +42,7 @@ let items = document.getElementsByClassName("item-design");
 ////////////////////////////////////////////////////////////////
 //The functions that when you click on a category, the old one will be removed and the new one will be displayed
 ////////////////////////////////////////////////////////////////
+
 
 
 function showDesign() {
@@ -253,16 +247,36 @@ function hide() {
 
 
 
-// function blured_video(object, src){
+//https://drive.google.com/file/d/1GbzRTXswwPC4PtnFO50V2boMbpjk4WHR/preview
 
-// }
+////////////////////////////////////////////////////////////////////////
+//create Video Items and tables
+////////////////////////////////////////////////////////////////////////
 
+let video_links = ["https://drive.google.com/file/d/1GbzRTXswwPC4PtnFO50V2boMbpjk4WHR/preview",
+    "https://drive.google.com/uc?export=download&id=1oCNEdWflL9xfnK-8C6MllR46-fj3KaVI",
+    "https://drive.google.com/uc?export=download&id=1mrMxbGyRKBSGDQ7Wb7SFF3pbH4yJlDAW",
+    "https://drive.google.com/uc?export=download&id=1wXHQGfHHFYQo7qeqEmB3TvKGjsQq8vP6",
+    "https://drive.google.com/uc?export=download&id=15LB2BAsFTiqxuI07hT2k4owODvKqyC6d"
+];
 
+let video_thubnails = ["Video/Screenshot 2023-08-30 185101.png",
+    "Video/Screenshot 2023-08-30 173808.png",
+    "Video/Screenshot 2023-08-30 184959.png",
+    "Video/Screenshot 2023-08-30 184828.png",
+    "Video/Screenshot 2023-08-30 184920.png"
+];
 
-function blured_video(object, src){
-    var source = src;
-    full.innerHTML = `<iframe src="${source}" width="640" height="480" allow="autoplay"></iframe>`;
-    console.log(src);
+for (let i = 0; i < video_thubnails.length; i++) {
+    grid_video.innerHTML += `<div class="item-container">
+    <img class="item" onclick="blured_video(${i})" src="${video_thubnails[i]}">
+    <i class="fa-solid fa-play fa-2xl video-icon" style="color: #ffffff;"></i>
+</div>`;
+}
+
+function blured_video(i){
+    current = i;
+    full.innerHTML = `<iframe src="${video_links[current]}" style="aspect-ratio:16/9;width:60vw;transform:translate(0,10%)" allow="autoplay" allowfullscreen></iframe>`;
     full.style.display = "block";
     background.style.display = "block";
     next.style.display = "block";

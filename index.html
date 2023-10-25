@@ -6,8 +6,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Ahmed Masmoudi</title>
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
+    <style>
+        .myInfo { 
+        /* background-image: url("18774815_6035948.jpg"); */
+        background-repeat: no-repeat;
+        background: none;
+        background-size: cover;
+        background-position: center;
+        /* position: relative; */
+        background-blend-mode: darken;
+        /* z-index: 5; */
+    }
+    #blur-background {
+        background-image: url("18774815_6035948.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(40px);
+        -webkit-filter: blur(40px);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+        display: block;
+    }
+    </style>
 </head>
 <body>
+    <div id="blur-background"></div>
     <header>
         <h2 class="h2-header">Ahmed Masmoudi</h2>
 
@@ -25,7 +51,7 @@
             </div>
             <div class="infoParagraph">
                 <h2 class="h2-info">About Me</h2>
-                <p class="p-info">Hi there! my name is Ahmed Masmoudi, and I'm a computer science student with passion for web development and graphic design. I enjoy creating new things and learning new skills. I'm a hard worker and I'm always looking for new challenges.</p>
+                <p class="p-info">Hi there! my name is Ahmed Masmoudi, I'm a computer science student with passion for web development and graphic design. I enjoy creating new things and learning new skills. I'm a hard worker and I'm always looking for new challenges.</p>
             </div>
             
         </div>
@@ -43,14 +69,15 @@
                 <a href="https://www.linkedin.com/in/ahmed-masmoudi-9b0b3a1b2/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="social-item">
+                <a href="https://www.linkedin.com/in/ahmed-masmoudi-9b0b3a1b2/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="social-item">
                 <a href="https://www.facebook.com/ahmed.masmoudi.9" target="_blank"><i class="fa-solid fa-phone"></i></a>
             </div>
             <div class="social-item">
                 <a href="https://www.instagram.com/ahmed_masmoudi_/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/in/ahmed-masmoudi-9b0b3a1b2/" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
+            
         </div>
         <p class="p-contact">@Ahmed Masmoudi, All rights reserved 2023 - 2024</p>
     </footer>
