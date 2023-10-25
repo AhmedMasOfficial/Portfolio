@@ -350,6 +350,25 @@ next.addEventListener("click", () => {
     }
 });
 
+document.addEventListener("keydown", (e) => {
+    if (e.key == "ArrowRight") {
+        if (video_btn.classList.contains("active")) {
+            to_next_vid(current);
+        }
+        else {
+            to_next();
+        }
+    }
+    else if (e.key == "ArrowLeft") {
+        if (video_btn.classList.contains("active")) {
+            to_prev_vid(current);
+        }
+        else {
+            to_prev();
+        }
+    }
+});
+
 prev.addEventListener("click", () => {
     if (video_btn.classList.contains("active")) {
         to_prev_vid(current);
