@@ -25,14 +25,14 @@ const ai_btn = document.querySelector(".ai-btn");
 // const create_full = document.querySelector(".create-full");
 // const create_form = document.getElementById("create-form");
 
-// if (design_btn.classList.contains("empty")) design_btn.style.display = "none";
-// if (video_btn.classList.contains("empty")) video_btn.style.display = "none";
-// if (design3d_btn.classList.contains("empty")) design3d_btn.style.display = "none";
-// if (web_btn.classList.contains("empty")) web_btn.style.display = "none";
-// if (mobile_btn.classList.contains("empty")) mobile_btn.style.display = "none";
-// if (desktop_btn.classList.contains("empty")) desktop_btn.style.display = "none";
-// if (game_btn.classList.contains("empty")) game_btn.style.display = "none";
-// if (ai_btn.classList.contains("empty")) ai_btn.style.display = "none";
+if (design_btn.classList.contains("empty")) design_btn.style.display = "none";
+if (video_btn.classList.contains("empty")) video_btn.style.display = "none";
+if (design3d_btn.classList.contains("empty")) design3d_btn.style.display = "none";
+if (web_btn.classList.contains("empty")) web_btn.style.display = "none";
+if (mobile_btn.classList.contains("empty")) mobile_btn.style.display = "none";
+if (desktop_btn.classList.contains("empty")) desktop_btn.style.display = "none";
+if (game_btn.classList.contains("empty")) game_btn.style.display = "none";
+if (ai_btn.classList.contains("empty")) ai_btn.style.display = "none";
 
 var full = document.getElementsByClassName("full")[0];
 let items = document.getElementsByClassName("item-design");
@@ -350,24 +350,35 @@ next.addEventListener("click", () => {
     }
 });
 
+
 document.addEventListener("keydown", (e) => {
     if (e.key == "ArrowRight") {
         if (video_btn.classList.contains("active")) {
-            to_next_vid(current);
+            if(next.style.display == "block"){
+                to_next_vid(current);
+            }
         }
         else {
-            to_next();
+            if(next.style.display == "block"){
+                to_next();
+            }
         }
     }
     else if (e.key == "ArrowLeft") {
         if (video_btn.classList.contains("active")) {
-            to_prev_vid(current);
+            if(prev.style.display == "block"){
+                to_prev_vid(current);
+            }
         }
         else {
-            to_prev();
+            if(prev.style.display == "block"){
+                to_prev();
+            }
         }
     }
 });
+
+
 
 prev.addEventListener("click", () => {
     if (video_btn.classList.contains("active")) {
