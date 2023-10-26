@@ -7,10 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
     <style>
-        body {
-            background: rgb(32, 32, 32);
-            background: linear-gradient(0deg, #230f31 0%, #1a0038 100%);
-        }
 
         .btn {
             background-color: #230f31;
@@ -24,11 +20,25 @@
             background-color: #edcdff;
             color: #230f31;
         }
+        #blur-background-img {
+        background-image: url("18774815_6035948.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(40px);
+        -webkit-filter: blur(40px);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -1;
+        display: block;
+    }
     </style>
     <title>Ahmed Masmoudi</title>
 </head>
 
 <body>
+    <div id="blur-background-img"></div>
     <header>
         <h2 class="h2-header">Ahmed Masmoudi</h2>
 
@@ -43,7 +53,7 @@
         <iframe src="cv.pdf" style="height:150vh;aspect-ratio: 3/4;"></iframe>
     </center><br><br>
     <footer class="contact">
-        <h2 class="h2-contact">Social Media</h2>
+        <h2 class="h2-contact">Contact info</h2>
         <div class="social-grid">
             <div class="social-item">
                 <a href="https://www.facebook.com/ahmed.masmoudi.9" target="_blank"><i class="fa-brands fa-facebook"></i></a>

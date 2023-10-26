@@ -10,9 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
+    <style>
+        #blur-background-img {
+        background-image: url("18774815_6035948.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: blur(40px);
+        -webkit-filter: blur(40px);
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: -3;
+        display: block;
+    }
+    </style>
 </head>
 
 <body>
+    <div id="blur-background-img"></div>
     <div id="blur-background" onclick="hide()">
     </div>
     <div class="backgroundColor"></div>
@@ -82,7 +98,7 @@
 
     <div class="full"></div>
     <footer class="contact">
-        <h2 class="h2-contact">Social Media</h2>
+        <h2 class="h2-contact">Contact info</h2>
         <div class="social-grid">
             <div class="social-item">
                 <a href="https://www.facebook.com/ahmed.masmoudi.9" target="_blank"><i class="fa-brands fa-facebook"></i></a>
