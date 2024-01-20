@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,33 @@
     <title>Ahmed Masmoudi</title>
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
     <style>
-        .myInfo { 
-        /* background-image: url("18774815_6035948.jpg"); */
-        background-repeat: no-repeat;
-        background: none;
-        background-size: cover;
-        background-position: center;
-        /* position: relative; */
-        background-blend-mode: darken;
-        /* z-index: 5; */
-    }
-    #blur-background-img {
-        background-image: url("18774815_6035948.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        filter: blur(40px);
-        -webkit-filter: blur(40px);
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        z-index: -1;
-        display: block;
-    }
+        .myInfo {
+            /* background-image: url("18774815_6035948.jpg"); */
+            background-repeat: no-repeat;
+            background: none;
+            background-size: cover;
+            background-position: center;
+            /* position: relative; */
+            background-blend-mode: darken;
+            /* z-index: 5; */
+        }
+
+        #blur-background-img {
+            background-image: url("18774815_6035948.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            filter: blur(40px);
+            -webkit-filter: blur(40px);
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: -1;
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <div id="blur-background-img"></div>
     <header>
@@ -50,38 +53,69 @@
             </div>
             <div class="infoParagraph">
                 <h2 class="h2-info">About Me</h2>
-                <p class="p-info">Hi there! my name is Ahmed Masmoudi, I'm a computer science student with passion for web development and graphic design. I enjoy creating new things and learning new skills. I'm a hard worker and I'm always looking for new challenges.</p>
+                <p class="p-info">Hi there! my name is Ahmed Masmoudi, I'm a computer science student with passion for
+                    web development and graphic design. I enjoy creating new things and learning new skills. I'm a hard
+                    worker and I'm always looking for new challenges.</p>
             </div>
-            
+
         </div>
     </section>
 
     <section>
         <div class="contact-container">
             <form action="https://formspree.io/f/xzbloyee" method="POST">
-                <p class="form-title">Contact me!</p>
+                <p class=" form-title">Contact me!</p>
                 <label>Full Name</label><br>
                 <input type="text" name="full-name" placeholder="Foulen Fouleni" required></input><br>
                 <label>Email</label><br>
                 <input type="email" name="email" placeholder="foulenfouleni@gmail.com" required></input><br>
                 <label>Messege</label><br>
                 <textarea name="messege" placeholder="Hello.." required></textarea>
-                <button class="send-btn" type="submit">Send</button>
+                <button class="send-btn" type="submit" onclick="resetForm()">Send</button>
             </form>
         </div>
     </section>
+
+
+    <section class="skills">
+        <h2 class="skills-heading">My Skills</h2>
+        <h3 class="skills-subheading">Media Management</h3>
+        <div class="skills-list">
+            <p>Adobe Premiere Pro</p>
+            <p>Adobe Photoshop</p>
+            <p>Adobe illustrator</p>
+            <p>Adobe Lightroom</p>
+            <p>Sony vegas Pro</p>
+        </div>
+        <h3 class="skills-subheading">Programming</h3>
+        <div class="skills-list">
+            <p>HTML / CSS</p>
+            <p>JavaScript</p>
+            <p>Tailwind</p>
+            <p>SQL</p>
+            <p>Git Basics</p>
+            <p>UI-UX: Figma</p>
+            <p>Java (OOP)</p>
+            <p>Dart</p>
+            <p>Flutter</p>
+        </div>
+    </section>
+
 
     <footer class="contact">
         <h2 class="h2-contact">Contact info</h2>
         <div class="social-grid">
             <div class="social-item">
-                <a href="https://www.facebook.com/ahmed.masmoudi.9" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/ahmed.masmoudi.9" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
             </div>
             <div class="social-item">
-                <a href="https://www.instagram.com/ahmed_masmoudi_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/ahmed_masmoudi_/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="social-item">
-                <a href="https://www.linkedin.com/in/ahmed-masmoudi-9b0b3a1b2/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-masmoudi-9b0b3a1b2/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="social-item">
                 <a href="https://github.com/AhmedMasOfficial" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -92,9 +126,18 @@
             <div class="social-item">
                 <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            
+
         </div>
         <p class="p-contact">@Ahmed Masmoudi, All rights reserved 2023 - 2024</p>
     </footer>
+
+
+    <script>
+        function resetForm() {
+            document.querySelector("form").reset();
+        }
+    </script>
+
 </body>
+
 </html>
