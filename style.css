@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
     transition: all .3s;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 
 /*====================================== header =============================================== */
 header {
@@ -157,6 +159,7 @@ body{
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .video-icon{
@@ -365,9 +368,9 @@ p.side-name{
 .myInfo{
     display: flex;
     flex-direction: row;
-    height: 100vh;
     background-color: #edcdff00;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .h2-info{
@@ -379,7 +382,7 @@ p.side-name{
 }
 
 .p-info{
-    font-size: 30px;
+    font-size: 2.5vw;
     font-weight: 400;
     color: rgb(231, 189, 253);
     padding: 10px 30px;
@@ -393,11 +396,11 @@ p.side-name{
 
 .infoParagraph{
     width: 50%;
-    padding:7%;
-    padding-left: 0;
+    min-width: 300px;
 }
 .myImageContainer{
     width: 50%;
+    min-width: 250px;
 }
 .myImage{
     aspect-ratio: 1/1;
@@ -405,17 +408,14 @@ p.side-name{
     background-image: url(images/ahmed_mas\ \(1\).jpg);
     background-position: center;
     background-size: cover;
-    margin: 15%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 0;
+    min-width: 250px;
     /* filter: saturate(50%); */
 }
 
 
 
 /* ================================================================================================================
-==============================================|| Contact ME ||======================================================
+==============================================|| Contact INFO ||======================================================
 ================================================================================================================*/
 
 footer{
@@ -438,6 +438,7 @@ header{
     color: #e7bdfd;
     text-transform: uppercase;
     padding: 10px 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .social-grid i{
@@ -489,6 +490,7 @@ header{
 label{
     color: #e7bdfd;
     font-size: x-large;
+    font-family: 'Poppins', sans-serif;
 }
 
 form{
@@ -556,5 +558,59 @@ textarea{
 input::placeholder,
 textarea::placeholder{
     color: #1c002977;
-    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: normal;
+}
+
+
+/* ================================================================================================================
+==============================================|| MY Skills ||======================================================
+================================================================================================================*/
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(28, 0, 41);
+    background: url("images/skills.jpg") no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:overlay;
+    /* background: radial-gradient(circle, rgba(28,0,41,1) 0%, rgb(42, 0, 68) 100%); */
+    padding: 20px;
+}
+
+.skills-heading{
+    font-size: 40px;
+    font-weight: 700;
+    color: #e7bdfd;
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+.skills-subheading{
+    font-size: 16px;
+    font-weight: 400;
+    color: #e7bdfd;
+    padding: 15px 30px;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list p{
+    margin: 15px 10px;
+    padding: 10px 20px;
+    color: #e7bdfd;
+    background-color: rgb(96, 67, 112);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 50px;
 }
