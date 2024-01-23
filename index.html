@@ -20,17 +20,18 @@
         }
 
         #blur-background-img {
-            background-image: url("18774815_6035948.png");
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url("images/Mesa.png");
+            background-repeat: no-repeat; 
+            background-size: cover; 
             background-position: center;
-            filter: blur(40px);
-            -webkit-filter: blur(40px);
+            /* filter: blur(5px);
+            -webkit-filter: blur(5px); */
             height: 100vh;
             width: 100vw;
             position: fixed;
             z-index: -1;
             display: block;
+            opacity: 0.6;
         }
     </style>
 </head>
@@ -56,6 +57,10 @@
                 <p class="p-info">Hi there! my name is Ahmed Masmoudi, I'm a computer science student with passion for
                     web development and graphic design. I enjoy creating new things and learning new skills. I'm a hard
                     worker and I'm always looking for new challenges.</p>
+                <div class="btn-container">
+                    <div class="secendary-btn"><a href="projects.html">See Projects</a></div>
+                    <div class="primary-btn"><a href="#contact-container">Contact me!</a></div>
+                </div>
             </div>
 
         </div>
@@ -87,10 +92,62 @@
         </div><br><br>
     </section>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <section class="exp-container">
+
+        <h2 class="exp-heading">Experiences</h2>
+
+        <div class="exp-grid">
+            <div class="exp-item">
+                <div class="exp-item-img"></div>
+                <div class="exp-item-info">
+                    <h3 class="exp-item-title">Graphic Designer</h3>
+                    <p class="exp-item-paragraph">I have been working as a graphic designer for 3 years now. I have
+                        worked on many projects and I have a good experience in this field.</p>
+                </div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-item-img"></div>
+                <div class="exp-item-info">
+                    <h3 class="exp-item-title">Web Developer</h3>
+                    <p class="exp-item-paragraph">I have been working as a web developer for 2 years now. I have
+                        worked on many projects and I have a good experience in this field.</p>
+                </div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-item-img"></div>
+                <div class="exp-item-info">
+                    <h3 class="exp-item-title">Mobile Developer</h3>
+                    <p class="exp-item-paragraph">I have been working as a mobile developer for 1 year now. I have
+                        worked on many projects and I have a good experience in this field.</p>
+                </div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-item-img"></div>
+                <div class="exp-item-info">
+                    <h3 class="exp-item-title">Desktop Developer</h3>
+                    <p class="exp-item-paragraph">I have been working as a desktop developer for 1 year now. I have
+                        worked on many projects and I have a good experience in this field.</p>
+                </div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-item-img"></div>
+                <div class="exp-item-info">
+                    <h3 class="exp-item-title">Game Developer</h3>
+                    <p class="exp-item-paragraph">I have been working as a game developer for 1 year now. I have
+                        worked on many projects and I have a good experience in this field.</p>
+                </div>
+            </div>
+
+    </section>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <section>
-        <div class="contact-container">
+        <div class="contact-container" id="contact-container">
             <form action="https://formspree.io/f/xzbloyee" method="POST">
                 <p class=" form-title">Contact me!</p>
                 <label>Full Name</label><br>

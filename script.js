@@ -415,5 +415,3 @@ function to_prev_vid(i) {
         prev.style.display = "block";
     }
 }
-
-
