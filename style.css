@@ -383,7 +383,7 @@ p.side-name {
 }
 
 .h2-info {
-    font-size: 40px;
+    font-size: calc(20px + 0.5vw);
     font-weight: 700;
     color: rgb(231, 189, 253);
     text-transform: uppercase;
@@ -409,7 +409,7 @@ p.side-name {
     background-position: center;
     background-size: cover;
     border: #e7bdfd 2px solid;
-    background-color: rgba(28, 0, 41, 0.2);
+    background-color: rgba(28, 0, 41, 0.4);
     padding: 30px;
     border-radius: 10px;
 }
@@ -436,6 +436,10 @@ p.side-name {
 
     .myImage {
         width: 50vw;
+    }
+    .h2-info{
+        font-size: 20px;
+        padding: 0;
     }
 }
 
@@ -705,11 +709,11 @@ textarea::placeholder {
 }
 
 .exp-heading {
-    font-size: 40px;
+    font-size: calc(30px + 0.5vw);
     font-weight: 700;
     color: #e7bdfd;
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 15px 0px;
     text-align: center;
 }
 
@@ -731,14 +735,10 @@ textarea::placeholder {
 }
 
 .exp-item-paragraph {
-    margin: 15px 10px;
-    padding: 10px 20px;
-    color: #e7bdfd;
-    background-color: rgb(96, 67, 112);
+    
     font-family: 'Poppins', sans-serif;
-    font-size: calc(20px + 0.5vw);
-    border-radius: 50px;
-    border: 2px solid #e7bdfd;
+    font-size: calc(16px + 0.5vw);
+    
 }
 
 .exp-item-paragraph:hover {
@@ -753,7 +753,7 @@ textarea::placeholder {
 
 .exp-item-img {
     aspect-ratio: 1/1;
-    height: 400px;
+    width: 30vw;
     border-radius: 10%;
     background-image: url(images/ahmed_mas_.png);
     background-position: center;
@@ -765,6 +765,23 @@ textarea::placeholder {
     justify-self: center;
 }
 
+@media screen and (max-width: 768px) {
+    .exp-item {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-item-img {
+        width: 50vw;
+    }
+    
+}
+
 .exp-item-info{
     justify-self: center;
+    border-radius: 50px;
+    border: 2px solid #e7bdfd;
+    margin: 15px 10px;
+    padding: 20px 20px;
+    color: #e7bdfd;
+    background-color: rgb(96, 67, 112);
 }
