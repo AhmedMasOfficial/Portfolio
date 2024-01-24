@@ -196,7 +196,7 @@ const grid_design = document.querySelector(".grid-container-design");
 let item_image = ["images/IG-1.png","images/IG-2.png","images/IG-3.png", "images/IG-4-3.png","images/pic1-2.png", "images/pic2-1.png","images/insta.png", "images/posts.ai_1200_630_px_1500_1500_px_1.png",
     "images/340653563_949680539392767_4660127515563206705_n.webp",
     "images/2-11.png", "images/113.png", "images/1122.png",
-    "images/2-logo nmtc+.png", "images/+Artboard 32_2.png", "images/official logo.png",
+    "images/2-logo-nmtc.png", "images/+Artboard 32_2.png", "images/official logo.png",
     "images/insta_ipsas_cyber.png", "images/insta3.png", "images/ezfhbze.jpg",
     "images/profil-pic.png", "images/1.jpg", "images/2.jpg", "images/3.jpg",
     "images/4.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg",
