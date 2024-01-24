@@ -27,7 +27,7 @@ header {
 }
 
 .h2-header {
-    font-size: 30px;
+    font-size: 2em;
     font-weight: 700;
     color: #edcdff;
     /* text-transform: uppercase; */
@@ -69,10 +69,15 @@ header {
 
     .h2-header {
         align-self: center;
+        font-size: 1em;
     }
 
     .li-header {
         margin: auto;
+    }
+    .a-header {
+        font-size: 16px;
+        font-weight: 700;
     }
 }
 
@@ -82,7 +87,7 @@ header {
 .a-header {
     text-decoration: none;
     color: #edcdff;
-    font-size: 20px;
+    font-size: calc(10px + 0.5vw);
     font-weight: 400;
     border-radius: 15px;
     padding: 10px 20px;
@@ -373,6 +378,7 @@ p.side-name {
     background-color: #edcdff00;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: calc(40px + 0.5vw);
 }
 
@@ -418,8 +424,19 @@ p.side-name {
     background-image: url(images/ahmed_mas_.png);
     background-position: center;
     background-size: cover;
-    min-width: 250px;
+    width: 30vw;
+    justify-self: center;
     /* filter: saturate(50%); */
+}
+
+@media screen and (max-width: 768px) {
+    .myInfo {
+        grid-template-columns: 1fr;
+    }
+
+    .myImage {
+        width: 50vw;
+    }
 }
 
 .btn-container a{
@@ -428,7 +445,7 @@ p.side-name {
 
 .primary-btn {
     background-color: #e7bdfd;
-    border: none;
+    border: solid #1c0029;
     color: #1c0029;
     font-weight: 700;
     text-transform: uppercase;
@@ -436,8 +453,6 @@ p.side-name {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 10px;
-    border-style: solid;
-    border-color: #1c0029;
 }
 
 .primary-btn:hover {
@@ -679,10 +694,7 @@ textarea::placeholder {
 ================================================================================================================*/
 
 .exp-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    
     background-color: rgb(28, 0, 41);
     background: url("images/experiances.png") no-repeat fixed;
     background-position: center;
@@ -698,6 +710,7 @@ textarea::placeholder {
     color: #e7bdfd;
     text-transform: uppercase;
     padding: 15px 30px;
+    text-align: center;
 }
 
 .exp-item-title {
@@ -711,11 +724,10 @@ textarea::placeholder {
 }
 
 .exp-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     align-items: center;
+    justify-content: center;
 }
 
 .exp-item-paragraph {
@@ -724,6 +736,7 @@ textarea::placeholder {
     color: #e7bdfd;
     background-color: rgb(96, 67, 112);
     font-family: 'Poppins', sans-serif;
+    font-size: calc(20px + 0.5vw);
     border-radius: 50px;
     border: 2px solid #e7bdfd;
 }
@@ -740,14 +753,18 @@ textarea::placeholder {
 
 .exp-item-img {
     aspect-ratio: 1/1;
+    height: 400px;
     border-radius: 10%;
     background-image: url(images/ahmed_mas_.png);
     background-position: center;
     background-size: cover;
-    min-width: 250px;
-    /* filter: saturate(50%); */
     margin: 15px 10px;
     padding: 10px 20px;
     border-radius: 50px;
     border: 2px solid #e7bdfd;
+    justify-self: center;
+}
+
+.exp-item-info{
+    justify-self: center;
 }
