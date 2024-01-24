@@ -436,12 +436,12 @@ p.side-name {
     }
 
     .myImage {
-        width: 50vw;
+        width: 70vw;
     }
 
     .h2-info {
         font-size: 20px;
-        padding: 0;
+        padding: 10px 0;
     }
 
     .p-info {
@@ -729,7 +729,7 @@ textarea::placeholder {
 .exp-heading {
     font-size: calc(30px + 0.5vw);
     font-weight: 700;
-    color: #e7bdfd;
+    color: rgb(28, 0, 41);
     text-transform: uppercase;
     padding: 15px 0px;
     text-align: center;
@@ -759,16 +759,6 @@ textarea::placeholder {
 
 }
 
-.exp-item-paragraph:hover {
-    background-color: rgb(28, 0, 41);
-    border: 2px solid #e7bdfd;
-}
-
-.exp-item-paragraph.active {
-    background-color: rgb(28, 0, 41);
-    border: 2px solid #e7bdfd;
-}
-
 .exp-item-img {
     aspect-ratio: 1/1;
     width: 30vw;
@@ -789,7 +779,7 @@ textarea::placeholder {
     }
 
     .exp-item-img {
-        width: 50vw;
+        width: 70vw;
     }
 
 }
@@ -801,5 +791,5 @@ textarea::placeholder {
     margin: 15px 10px;
     padding: 20px 20px;
     color: #e7bdfd;
-    background-color: rgb(96, 67, 112);
+    background-color: rgb(28, 0, 41);
 }
