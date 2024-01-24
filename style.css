@@ -402,15 +402,11 @@ p.side-name {
 }
 
 .infoParagraph {
-    /* width: 50%;
-    min-width: 300px; */
     margin: 30px;
-    /* background: url("18774815_6035948.png") no-repeat fixed; */
-    backdrop-filter: blur(40px);
-    background-position: center;
-    background-size: cover;
+    backdrop-filter: blur(2px);
     border: #e7bdfd 2px solid;
-    background-color: rgba(28, 0, 41, 0.4);
+    background-color: rgba(28, 0, 41, 0.5);
+    filter: saturate(1.5);
     padding: 30px;
     border-radius: 10px;
 }
@@ -716,15 +712,14 @@ textarea::placeholder {
 ================================================================================================================*/
 
 .exp-container {
-
-    background-color: rgb(28, 0, 41);
-    background: url("images/experiances.png") no-repeat fixed;
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
     /* background: radial-gradient(circle, rgba(28,0,41,1) 0%, rgb(42, 0, 68) 100%); */
-    padding: calc(40px + 0.5vw);
+    
 }
+
+
 
 .exp-heading {
     font-size: calc(30px + 0.5vw);
@@ -733,16 +728,23 @@ textarea::placeholder {
     text-transform: uppercase;
     padding: 15px 0px;
     text-align: center;
+    width: 100vw;
+    background-color: #e7bdfd;
+    box-shadow: 0 5px 0 #1c0029;
 }
 
-.exp-item-title {
+.exp-grid{
+    padding: calc(40px + 0.5vw);
+}
+
+.exp-item-paragraph {
     font-size: 16px;
     font-weight: 400;
-    color: #e7bdfd;
+    color: #1c0029;
     padding: 15px 30px;
     word-spacing: 5px;
     letter-spacing: 4px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .exp-item {
@@ -752,12 +754,16 @@ textarea::placeholder {
     justify-content: center;
 }
 
-.exp-item-paragraph {
-
+.exp-item-title {
+    font-size: calc(15px + 0.5vw);
+    font-weight: 700;
+    color: #1c0029;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: calc(16px + 0.5vw);
-
 }
+
 
 .exp-item-img {
     aspect-ratio: 1/1;
@@ -768,8 +774,8 @@ textarea::placeholder {
     background-size: cover;
     margin: 15px 10px;
     padding: 10px 20px;
-    border-radius: 50px;
-    border: 2px solid #e7bdfd;
+    border: 2px solid #1c0029;
+    box-shadow: -5px 5px 0 #1c0029;
     justify-self: center;
 }
 
@@ -777,6 +783,14 @@ textarea::placeholder {
     .exp-item {
         grid-template-columns: 1fr;
     }
+
+    .exp-item:nth-child(2) .exp-item-info{
+        order: 2;
+      }
+
+      .exp-item:nth-child(2) .exp-item-img{
+        order: 1;
+      }
 
     .exp-item-img {
         width: 70vw;
@@ -786,10 +800,25 @@ textarea::placeholder {
 
 .exp-item-info {
     justify-self: center;
-    border-radius: 50px;
-    border: 2px solid #e7bdfd;
+    box-shadow: -5px 5px 0px 0px #1c0029;
+    /* border-radius: 10px; */
+    border: 2px solid #1c0029;
     margin: 15px 10px;
     padding: 20px 20px;
     color: #e7bdfd;
-    background-color: rgb(28, 0, 41);
+    /* background-color: rgb(28, 0, 41); */
+    backdrop-filter: blur(2px);
+    border: #1c0029 2px solid;
+    background-color: #e7bdfd;
 }
+
+
+/* .infoParagraph {
+    margin: 30px;
+    backdrop-filter: blur(2px);
+    border: #e7bdfd 2px solid;
+    background-color: rgba(28, 0, 41, 0.5);
+    filter: saturate(1.5);
+    padding: 30px;
+    border-radius: 10px;
+} */
