@@ -728,7 +728,8 @@ textarea::placeholder {
         /* no-repeat fixed */
     ;
     background-color: rgba(28, 0, 41,1);
-    
+    filter: brightness(1.7);
+    filter:saturate(1.5)
     /* filter: blur(2px); */
     background-position: center;
     background-size: cover;
@@ -766,8 +767,10 @@ textarea::placeholder {
     margin: 15px 10px;
     padding: 10px 20px;
     color: #e7bdfd;
-    background-color: rgb(96, 67, 112);
+    backdrop-filter: blur(10px);
+    /* background-color: rgb(96, 67, 112); */
     font-family: 'Poppins', sans-serif;
+
     border-radius: 50px;
     border: 2px solid #e7bdfd;
 }
@@ -913,4 +916,88 @@ textarea::placeholder {
 
 .exp-item-img:hover {
     transform: scale(1.05);
+}
+
+
+/* ================================================================================================================
+==============================================|| Services section ||======================================================
+================================================================================================================*/
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: calc(40px + 0.5vw);
+}
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background: url("images/Stocks(ECCENTRIC)22.png") */
+    background: url("images/Stocks344.png")
+        no-repeat fixed
+    ;
+    background-color: rgba(28, 0, 41,1);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:soft-light;
+    padding: calc(40px + 0.5vw);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+
+.service-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background-color: rgba(28, 0, 41,1); */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode:soft-light;
+    padding: calc(20px + 0.5vw);
+    border: 2px solid #e7bdfd;
+    backdrop-filter: blur(40px);
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1); */
+}
+
+.service-item-title {
+    font-size: calc(12px + 0.5vw);
+    font-weight: 700;
+    color: #e7bdfd;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+
+.service-item-paragraph {
+    font-size: 10px;
+    font-weight: 400;
+    color: #e7bdfd;
+    padding: 15px 10px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.service-item-btn{
+    background-color: #e7bdfd;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    color: #1c0029;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: solid 2px #e7bdfd;
+}
+
+.service-item-btn:hover {
+    background-color: #1c0029;
+    color: #e7bdfd;
+    border-style: solid;
+    border-color: #e7bdfd;
 }

@@ -31,7 +31,8 @@
             position: fixed;
             z-index: -1;
             display: block;
-            opacity: 1;
+            filter: saturate(1.5);
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -147,7 +148,7 @@
     </section>
 
 
-    <section class="skills"><br><br>
+    <section class="services"><br><br>
         <h2 class="skills-heading">What i offer</h2>
 
         <div class="services-grid">
@@ -157,6 +158,32 @@
                 <p class="service-item-paragraph">I offer a wide range of graphic design services, including logo
                     design, branding, and print design. I'm passionate about creating unique and captivating designs
                     that reflect the essence of your brand.</p>
+                <a href="#contact-container" class="service-item-btn">Make order!</a>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-video"></i>
+                <h3 class="service-item-title">Video Editing</h3>
+                <p class="service-item-paragraph">I offer a wide range of video editing services, including video
+                    editing, motion graphics, and color grading. I'm passionate about creating unique and captivating
+                    videos that reflect the essence of your brand.</p>
+                <a href="#contact-container" class="service-item-btn">Make order!</a>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3 class="service-item-title">Mobile Development</h3>
+                <p class="service-item-paragraph">I offer a wide range of web development services, including website
+                    development, web application development, and web design. I'm passionate about creating unique and
+                    captivating websites that reflect the essence of your brand.</p>
+                <a href="#contact-container" class="service-item-btn">Make order!</a>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3 class="service-item-title">UI/UX Design</h3>
+                <p class="service-item-paragraph">I offer a wide range of web development services, including website
+                    development, web application development, and web design. I'm passionate about creating unique and
+                    captivating websites that reflect the essence of your brand.</p>
                 <a href="#contact-container" class="service-item-btn">Make order!</a>
             </div>
         </div>
@@ -227,7 +254,7 @@
     <script>
         const form = document.querySelector('form');
 
-        function resetForm(){
+        function resetForm() {
             setTimeout(() => {
                 form.reset();
                 console.log('success');
