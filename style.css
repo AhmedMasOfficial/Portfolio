@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -392,23 +394,21 @@ p.side-name {
 }
 
 .p-info {
-    font-size: calc(20px + 0.5vw);
-    font-weight: 400;
+    font-size: calc(6px + 0.7vw);
+    /* font-weight: 400; */
     color: rgba(231, 189, 253, 0.774);
-    word-spacing: 5px;
-    letter-spacing: 4px;
-
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .infoParagraph {
     margin: 30px;
     backdrop-filter: blur(2px);
     border: #e7bdfd 2px solid;
+    box-shadow: -5px 5px 0px 0px #1c0029;
     background-color: rgba(28, 0, 41, 1);
     filter: saturate(1.5);
     padding: 30px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 /* .myImageContainer{
@@ -441,22 +441,23 @@ p.side-name {
     }
 
     .p-info {
-        font-size: 16px;
+        font-size: 12px;
         padding: 0;
         word-spacing: 0px;
         letter-spacing: 0px;
     }
+
     .btn-container a {
         padding: 10px 15px;
     }
-    .infoParagraph{
+
+    .infoParagraph {
         margin: 10px 0;
-    
     }
 }
 
 .btn-container a {
-   font-size: calc(5px + 0.6vw);
+    font-size: calc(5px + 0.6vw);
 }
 
 .primary-btn {
@@ -586,9 +587,11 @@ label {
 
 form {
     width: clamp(300px, 50%, 800px);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     padding: 40px;
     background-color: #1c0029;
+    border: #e7bdfd 2px solid;
+    box-shadow: -5px 5px 0px 0px #1c0029;
     margin: auto;
     margin-bottom: 50px;
 }
@@ -650,8 +653,6 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: #1c002977;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: normal;
 }
 
 
@@ -716,6 +717,14 @@ textarea::placeholder {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 768px) {
+    .skills-list p {
+        margin: 10px 5px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
 /* ================================================================================================================
 ==============================================|| Experiances section ||======================================================
 ================================================================================================================*/
@@ -725,7 +734,7 @@ textarea::placeholder {
     background-size: cover;
     background-blend-mode: overlay;
     /* background: radial-gradient(circle, rgba(28,0,41,1) 0%, rgb(42, 0, 68) 100%); */
-    
+
 }
 
 
@@ -742,7 +751,7 @@ textarea::placeholder {
     /* box-shadow: 0 5px 0 #e7bdfd; */
 }
 
-.exp-grid{
+.exp-grid {
     padding: calc(40px + 0.5vw);
 }
 
@@ -787,22 +796,37 @@ textarea::placeholder {
     justify-self: center;
 }
 
+@media screen and (max-width: 1091px) {
+    .exp-item {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-item:nth-child(2) .exp-item-info {
+        order: 2;
+    }
+
+    .exp-item:nth-child(2) .exp-item-img {
+        order: 1;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .exp-item {
         grid-template-columns: 1fr;
     }
 
-    .exp-item:nth-child(2) .exp-item-info{
+    .exp-item:nth-child(2) .exp-item-info {
         order: 2;
-      }
+    }
 
-      .exp-item:nth-child(2) .exp-item-img{
+    .exp-item:nth-child(2) .exp-item-img {
         order: 1;
-      }
+    }
 
     .exp-item-img {
         width: 70vw;
     }
+
     .exp-item-paragraph {
         font-size: 12px;
         padding: 10px 0;
