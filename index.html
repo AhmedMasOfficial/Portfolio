@@ -147,6 +147,23 @@
     </section>
 
 
+    <section class="skills"><br><br>
+        <h2 class="skills-heading">What i offer</h2>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h3 class="service-item-title">Graphic Design</h3>
+                <p class="service-item-paragraph">I offer a wide range of graphic design services, including logo
+                    design, branding, and print design. I'm passionate about creating unique and captivating designs
+                    that reflect the essence of your brand.</p>
+                <a href="#contact-container" class="service-item-btn">Make order!</a>
+            </div>
+        </div>
+
+
+    </section>
+
     <br><br><br><br><br><br><br><br>
 
     <section>
@@ -159,7 +176,7 @@
                 <input type="email" name="email" placeholder="foulenfouleni@gmail.com" required></input><br>
                 <label>Messege</label><br>
                 <textarea name="messege" placeholder="Hello.." required></textarea>
-                <button class="send-btn" type="submit" onclick="resetForm()">Send</button>
+                <button class="send-btn" onclick="resetForm()" type="submit">Send</button>
             </form>
         </div>
     </section>
@@ -167,7 +184,7 @@
 
     <footer class="contact">
         <h2 class="h2-contact">Contact info</h2>
-        
+
         <div class="social-grid">
             <div class="social-item">
                 <a href="https://www.facebook.com/ahmed.masmoudi.9" target="_blank"><i
@@ -188,16 +205,18 @@
             <div class="social-item">
                 <a href="https://github.com/AhmedMasOfficial" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
-            
+
 
         </div>
-        <div class="social-item-contact">
-            <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <p>ahmedmasmoudiofficial@gmail.com</p>
-        </div>
-        <div class="social-item-contact">
-            <a href="" target="_blank"><i class="fa-solid fa-phone"></i></a>
-            <p>+216 54 323 705</p>
+        <div class="contact-wrapper">
+            <div class="social-item-contact">
+                <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <p>ahmedmasmoudiofficial@gmail.com</p>
+            </div>
+            <div class="social-item-contact">
+                <a href="" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                <p>+216 54 323 705</p>
+            </div>
         </div>
 
 
@@ -206,8 +225,13 @@
 
 
     <script>
-        function resetForm() {
-            document.querySelector("form").reset();
+        const form = document.querySelector('form');
+
+        function resetForm(){
+            setTimeout(() => {
+                form.reset();
+                console.log('success');
+            }, 200);
         }
     </script>
 

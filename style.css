@@ -494,9 +494,6 @@ p.side-name {
     border-color: #e7bdfd; */
 }
 
-.secendary-btn:hover {
-    color: #1c0029;
-}
 
 .btn-container {
     display: flex;
@@ -689,9 +686,10 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: #1c002977;
+    font-size: x-large;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     form {
         width: 100%;
     }
@@ -726,14 +724,15 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgb(28, 0, 41);
-    background: url("images/Mesa.png")
-        /* no-repeat fixed*/
+    background: url("images/Stocks77.png")
+        /* no-repeat fixed */
     ;
-    filter: blur(2px);
+    background-color: rgba(28, 0, 41,1);
+    
+    /* filter: blur(2px); */
     background-position: center;
     background-size: cover;
-    background-blend-mode: overlay;
+    background-blend-mode:soft-light;
     /* background: radial-gradient(circle, rgba(28,0,41,1) 0%, rgb(42, 0, 68) 100%); */
     padding: calc(40px + 0.5vw);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
