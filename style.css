@@ -405,7 +405,7 @@ p.side-name {
     margin: 30px;
     backdrop-filter: blur(2px);
     border: #e7bdfd 2px solid;
-    background-color: rgba(28, 0, 41, 0.5);
+    background-color: rgba(28, 0, 41, 1);
     filter: saturate(1.5);
     padding: 30px;
     border-radius: 10px;
@@ -478,7 +478,6 @@ p.side-name {
     color: #e7bdfd;
     border-style: solid;
     border-color: #e7bdfd;
-    text-decoration: underline;
 }
 
 .secendary-btn {
@@ -492,6 +491,10 @@ p.side-name {
     margin-top: 20px;
     /* border-style: solid;
     border-color: #e7bdfd; */
+}
+
+.secendary-btn:hover {
+    color: #1c0029;
 }
 
 .btn-container {
@@ -706,6 +709,12 @@ textarea::placeholder {
     border: 2px solid #e7bdfd;
 }
 
+.skills-list p:hover {
+    background-color: rgb(28, 0, 41);
+    border: 2px solid #e7bdfd;
+    color: #edcdff;
+    transform: scale(1.05);
+}
 
 /* ================================================================================================================
 ==============================================|| Experiances section ||======================================================
@@ -724,13 +733,13 @@ textarea::placeholder {
 .exp-heading {
     font-size: calc(30px + 0.5vw);
     font-weight: 700;
-    color: rgb(28, 0, 41);
+    background-color: rgb(28, 0, 41);
     text-transform: uppercase;
     padding: 15px 0px;
     text-align: center;
     width: 100vw;
-    background-color: #e7bdfd;
-    box-shadow: 0 5px 0 #1c0029;
+    color: #e7bdfd;
+    /* box-shadow: 0 5px 0 #e7bdfd; */
 }
 
 .exp-grid{
@@ -738,12 +747,11 @@ textarea::placeholder {
 }
 
 .exp-item-paragraph {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     color: #1c0029;
     padding: 15px 30px;
-    word-spacing: 5px;
-    letter-spacing: 4px;
+    line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -795,6 +803,10 @@ textarea::placeholder {
     .exp-item-img {
         width: 70vw;
     }
+    .exp-item-paragraph {
+        font-size: 12px;
+        padding: 10px 0;
+    }
 
 }
 
@@ -812,13 +824,6 @@ textarea::placeholder {
     background-color: #e7bdfd;
 }
 
-
-/* .infoParagraph {
-    margin: 30px;
-    backdrop-filter: blur(2px);
-    border: #e7bdfd 2px solid;
-    background-color: rgba(28, 0, 41, 0.5);
-    filter: saturate(1.5);
-    padding: 30px;
-    border-radius: 10px;
-} */
+.exp-item-img:hover {
+    transform: scale(1.05);
+}
