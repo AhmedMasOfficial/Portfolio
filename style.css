@@ -541,6 +541,10 @@ header {
     transition: all .3s;
 }
 
+.fa-solid {
+    color: #e7bdfd;
+}
+
 .contact {
     background-color: rgb(28, 0, 41);
     display: flex;
@@ -574,6 +578,38 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.social-item-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    margin: 5px 0;
+    justify-content: center;
+    align-items: center;
+    color: #e7bdfd;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .social-grid i {
+        font-size: 30px;
+        padding: 5px 10px;
+    }
+
+    .h2-contact {
+        font-size: 20px;
+    }
+
+    .p-contact {
+        font-size: 12px;
+    }
+
+    .social-item-contact {
+        font-size: 12px;
+    }
+
+}
 
 /* ================================================================================================================
 ==============================================|| Contact Form ||======================================================
@@ -586,7 +622,7 @@ label {
 }
 
 form {
-    width: clamp(300px, 50%, 800px);
+    width: clamp(400px, 50%, 800px);
     /* border-radius: 10px; */
     padding: 40px;
     background-color: #1c0029;
@@ -655,6 +691,31 @@ textarea::placeholder {
     color: #1c002977;
 }
 
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 14px;
+    }
+
+    input,textarea {
+        font-size: 14px;
+    }
+    .send-btn {
+        font-size: 14px;
+    }
+}
 
 /* ================================================================================================================
 ==============================================|| MY Skills ||======================================================
@@ -666,7 +727,10 @@ textarea::placeholder {
     align-items: center;
     text-align: center;
     background-color: rgb(28, 0, 41);
-    background: url("images/skills.png") no-repeat fixed;
+    background: url("images/Mesa.png")
+        /* no-repeat fixed*/
+    ;
+    filter: blur(2px);
     background-position: center;
     background-size: cover;
     background-blend-mode: overlay;
@@ -690,7 +754,6 @@ textarea::placeholder {
     padding: 15px 30px;
     word-spacing: 5px;
     letter-spacing: 4px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .skills-list {
@@ -743,12 +806,13 @@ textarea::placeholder {
     font-size: calc(30px + 0.5vw);
     font-weight: 700;
     background-color: rgb(28, 0, 41);
+    border-bottom: #e7bdfd solid 2px;
+    border-top: #e7bdfd solid 2px;
+    box-shadow: 0px 5px 0px 0px #1c0029;
     text-transform: uppercase;
     padding: 15px 0px;
     text-align: center;
-    width: 100vw;
     color: #e7bdfd;
-    /* box-shadow: 0 5px 0 #e7bdfd; */
 }
 
 .exp-grid {
@@ -785,13 +849,13 @@ textarea::placeholder {
 .exp-item-img {
     aspect-ratio: 1/1;
     width: 30vw;
-    border-radius: 10%;
+    border-radius: 5%;
     background-image: url(images/ahmed_mas_.png);
     background-position: center;
     background-size: cover;
     margin: 15px 10px;
     padding: 10px 20px;
-    border: 2px solid #1c0029;
+    border: 2px solid #e7bdfd;
     box-shadow: -5px 5px 0 #1c0029;
     justify-self: center;
 }
