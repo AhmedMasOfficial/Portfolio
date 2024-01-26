@@ -724,8 +724,8 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: url("images/Stocks77.png")
-        no-repeat fixed
+    background: url("images/Stocks333.png")
+        no-repeat fixed 
     ;
     background-color: rgba(28, 0, 41,1);
     filter: brightness(1.7);
