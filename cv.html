@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
     <style>
-
         .btn {
             background-color: #230f31;
             padding: 15px 20px;
@@ -16,10 +15,12 @@
             cursor: pointer;
             text-decoration: none;
         }
+
         .btn:hover {
             background-color: #edcdff;
             color: #230f31;
         }
+
         #blur-background-img {
             background-image: url("images/view.png");
             background-repeat: no-repeat;
@@ -34,6 +35,30 @@
             display: block;
             filter: saturate(1.5);
             opacity: 0.8;
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 80%;
+            padding-top: 100%;
+            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+        @media screen and (min-width: 1500px) {
+            .container {
+                padding-top: 80%;
+            }
+        }
+
+        /* Then style the iframe to fit in the container div with full height and width */
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
     <title>Ahmed Masmoudi</title>
@@ -52,7 +77,9 @@
     </header>
     <center><br><br><br>
         <a href="cv.pdf" class="btn" download="ahmed masmoudi CV">Download CV</a><br><br><br>
-        <iframe src="cv.pdf" style="height:150vh;aspect-ratio: 3/4;"></iframe>
+        <div class="container">
+            <iframe src="cv.pdf" class="responsive-iframe"></iframe>
+        </div>
     </center><br><br>
     <footer class="contact">
         <h2 class="h2-contact">Contact info</h2>
