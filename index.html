@@ -25,9 +25,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center; */
-            /* filter: blur(5px);
+        /* filter: blur(5px);
             -webkit-filter: blur(20px); */
-            /* height: 120vh;
+        /* height: 120vh;
             width: 100vw;
             position: fixed;
             z-index: -1;
@@ -83,8 +83,8 @@
     </header>
     <section>
         <div class="myInfo">
-            <div class="myImage hidden"></div>
-            <div class="infoParagraph hidden">
+            <div class="myImage hidden-move"></div>
+            <div class="infoParagraph hidden-move">
                 <h2 class="h2-info">About Me</h2>
                 <p class="p-info">Hey there, I'm Ahmed Masmoudi, a computer science student at the Higher Institute of
                     Computer Science and Multimedia in Sfax. I'm passionate about creativity and technology, originally
@@ -102,27 +102,27 @@
 
 
 
-    <section class="skills hidden"><br><br>
+    <section class="skills"><br><br>
         <h2 class="skills-heading">My Skills</h2>
         <h3 class="skills-subheading">Media Management</h3>
         <div class="skills-list">
-            <p>Premiere Pro</p>
-            <p>Photoshop</p>
-            <p>illustrator</p>
-            <p>Lightroom</p>
-            <p>Sony vegas Pro</p>
+            <p class="hidden">Premiere Pro</p>
+            <p class="hidden">Photoshop</p>
+            <p class="hidden">illustrator</p>
+            <p class="hidden">Lightroom</p>
+            <p class="hidden">Sony vegas Pro</p>
         </div>
         <h3 class="skills-subheading">Programming</h3>
         <div class="skills-list">
-            <p>HTML / CSS</p>
-            <p>JavaScript</p>
-            <p>Tailwind</p>
-            <p>SQL</p>
-            <p>Git Basics</p>
-            <p>UI-UX: Figma</p>
-            <p>Java (OOP)</p>
-            <p>Dart</p>
-            <p>Flutter</p>
+            <p class="hidden">HTML / CSS</p>
+            <p class="hidden">JavaScript</p>
+            <p class="hidden">Tailwind</p>
+            <p class="hidden">SQL</p>
+            <p class="hidden">Git Basics</p>
+            <p class="hidden">UI-UX: Figma</p>
+            <p class="hidden">Java (OOP)</p>
+            <p class="hidden">Dart</p>
+            <p class="hidden">Flutter</p>
         </div><br><br>
     </section>
 
@@ -138,7 +138,7 @@
             <div class="exp-item">
                 <div class="exp-item-img"
                     style="background-image: url(images/326100979_1410177849513896_8347484766140177998_n.jpg);"></div>
-                <div class="exp-item-info">
+                <div class="exp-item-info hidden-move">
                     <h3 class="exp-item-title">Training scessions</h3>
                     <p class="exp-item-paragraph">As a student, I've had the privilege of sharing my knowledge through
                         training sessions. At IHEC, I covered essential skills in both Photoshop and Illustrator.
@@ -152,7 +152,7 @@
 
             <div class="exp-item">
 
-                <div class="exp-item-info">
+                <div class="exp-item-info hidden-move">
                     <h3 class="exp-item-title">National Microsoft Technologies Camp</h3>
                     <p class="exp-item-paragraph">Contributing to the success of the National Microsoft Technologies
                         Camp, one of Tunisia's biggest IT events, has been a highlight of my journey. Serving as a video
@@ -166,7 +166,7 @@
 
             <div class="exp-item">
                 <div class="exp-item-img" style="background-image: url(images/MG_5638.jpg);""></div>
-                <div class=" exp-item-info">
+                <div class=" exp-item-info hidden-move">
                     <h3 class="exp-item-title">University Clubs</h3>
                     <p class="exp-item-paragraph">As a student engaged in clubs, I've played diverse roles. In the
                         Microsoft Tech Club, my focus as a graphic designer allowed me to blend creativity with
@@ -184,7 +184,7 @@
         <h2 class="skills-heading">What i offer</h2>
 
         <div class="services-grid">
-            <div class="service-item">
+            <div class="service-item hidden">
                 <i class="fa-solid fa-pen-ruler"></i>
                 <h3 class="service-item-title">Graphic Design</h3>
                 <p class="service-item-paragraph">I offer a wide range of graphic design services, including logo
@@ -193,7 +193,7 @@
                 <a href="#contact-container" class="service-item-btn">Make order!</a>
             </div>
 
-            <div class="service-item">
+            <div class="service-item hidden">
                 <i class="fa-solid fa-video"></i>
                 <h3 class="service-item-title">Video Editing</h3>
                 <p class="service-item-paragraph">I offer a wide range of video editing services, including video
@@ -202,7 +202,7 @@
                 <a href="#contact-container" class="service-item-btn">Make order!</a>
             </div>
 
-            <div class="service-item">
+            <div class="service-item hidden">
                 <i class="fa-solid fa-laptop-code"></i>
                 <h3 class="service-item-title">Mobile Development</h3>
                 <p class="service-item-paragraph">I offer a wide range of web development services, including website
@@ -210,7 +210,7 @@
                     captivating websites that reflect the essence of your brand.</p>
                 <a href="#contact-container" class="service-item-btn">Make order!</a>
             </div>
-            <div class="service-item">
+            <div class="service-item hidden">
                 <i class="fa-solid fa-pen-ruler"></i>
                 <h3 class="service-item-title">UI/UX Design</h3>
                 <p class="service-item-paragraph">I offer a wide range of web development services, including website
@@ -240,7 +240,7 @@
         </div>
     </section>
 
-
+    <br><br><br>
     <footer class="contact">
         <h2 class="h2-contact">Contact info</h2>
 
@@ -292,6 +292,26 @@
             }, 200);
         }
     </script>
+
+    <script>
+        const skills = document.querySelectorAll('.skills-list .hidden');
+        let delay = 0;
+
+        skills.forEach((skill) => {
+            skill.style.transitionDelay = `${delay}ms`; // Add "ms" unit to the delay value
+            delay += 200; // Increment delay for each skill
+        });
+    </script>
+
+<script>
+    const offers = document.querySelectorAll('.services-grid .hidden');
+    let off_delay = 0;
+
+    offers.forEach((offer) => {
+        offer.style.transitionDelay = `${off_delay}ms`; // Add "ms" unit to the delay value
+        off_delay += 300; // Increment delay for each skill
+    });
+</script>
 
 </body>
 
