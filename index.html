@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Ahmed Masmoudi</title>
-    <script defer src="script.js"></script>
+    <script defer src="intersectionObserver.js"></script>
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
     <style>
         .myInfo {
@@ -60,7 +60,7 @@
             width: 100%;
             height: 100%;
             background-color: #d2a1ff;
-            opacity: 0.8;
+            opacity: 0.7;
             z-index: -1;
             background-image: linear-gradient(#9200de 1.3px, transparent 1.3px), linear-gradient(to right, #9200de 1.3px, #d2a1ff 1.3px);
             background-size: 26px 26px;
@@ -97,13 +97,12 @@
                     <a class="primary-btn" href="#contact-container">Contact me!</a>
                 </div>
             </div>
-
         </div>
     </section>
 
 
 
-    <section class="skills"><br><br>
+    <section class="skills hidden"><br><br>
         <h2 class="skills-heading">My Skills</h2>
         <h3 class="skills-subheading">Media Management</h3>
         <div class="skills-list">
@@ -226,7 +225,7 @@
 
     <br><br><br><br><br><br><br><br>
 
-    <section>
+    <section class="hidden">
         <div class="contact-container" id="contact-container">
             <form action="https://formspree.io/f/xzbloyee" method="POST">
                 <p class=" form-title">Contact me!</p>

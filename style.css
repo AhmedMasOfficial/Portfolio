@@ -1014,10 +1014,20 @@ textarea::placeholder {
 }
 
 
+
+/* ================================================================================================================
+==================== animation =================================================================*/
 .hidden{
     opacity: 0;
+    filter: blur(10px);
+    transition: all 0.5s;
 }
 
 .show{
     opacity: 1;
+    filter: blur(0px);
+}
+
+.myInfo:nth-child(1){
+    transition-delay: 1s;
 }
