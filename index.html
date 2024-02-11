@@ -20,53 +20,6 @@
             /* z-index: 5; */
         }
 
-        /* #blur-background-img {
-            background-image: url("images/view.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center; */
-        /* filter: blur(5px);
-            -webkit-filter: blur(20px); */
-        /* height: 120vh;
-            width: 100vw;
-            position: fixed;
-            z-index: -1;
-            display: block;
-            filter: saturate(1.5);
-            opacity: 0.8;
-        } */
-        @keyframes moveBackground {
-            from {
-                background-position: 0 0;
-            }
-
-            to {
-                background-position: 50% -100%;
-                /* Move background to the top-right */
-            }
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            /* overflow: hidden; */
-            /* Prevent scrolling due to moving background */
-        }
-
-        #blur-background-img {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #d2a1ff;
-            opacity: 0.7;
-            z-index: -1;
-            background-image: linear-gradient(#9200de 1.3px, transparent 1.3px), linear-gradient(to right, #9200de 1.3px, #d2a1ff 1.3px);
-            background-size: 26px 26px;
-            animation: moveBackground 150s linear infinite;
-            /* Adjust animation duration as needed */
-        }
     </style>
 </head>
 
@@ -140,11 +93,7 @@
                     style="background-image: url(images/326100979_1410177849513896_8347484766140177998_n.jpg);"></div>
                 <div class="exp-item-info hidden-move">
                     <h3 class="exp-item-title">Training scessions</h3>
-                    <p class="exp-item-paragraph">As a student, I've had the privilege of sharing my knowledge through
-                        training sessions. At IHEC, I covered essential skills in both Photoshop and Illustrator.
-                        Furthermore, I facilitated an introductory workshop on Adobe Premiere Pro at Sakiet Ezzit
-                        Culture House. These experiences have been valuable learning opportunities, allowing me to
-                        contribute to the creative community while honing my skills</p>
+                    <p class="exp-item-paragraph">As a student, I've shared my knowledge through training sessions. At IHEC, I covered Photoshop and Illustrator skills. I also led an Adobe Premiere Pro workshop at Sakiet Ezzit Culture House. Moreover, I conducted CSS training with the Google club ISIMS and HTML/CSS training with the Microsoft club at IHECS. These experiences allowed me to contribute to the creative community while honing my skills.</p>
                 </div>
             </div>
 
@@ -187,36 +136,30 @@
             <div class="service-item hidden">
                 <i class="fa-solid fa-pen-ruler"></i>
                 <h3 class="service-item-title">Graphic Design</h3>
-                <p class="service-item-paragraph">I offer a wide range of graphic design services, including logo
-                    design, branding, and print design. I'm passionate about creating unique and captivating designs
-                    that reflect the essence of your brand.</p>
-                <a href="#contact-container" class="service-item-btn">Make order!</a>
+                <p class="service-item-paragraph">I specialize in graphic design, providing tailored solutions to elevate your brand. From dynamic flyers to sleek business cards and engaging social media visuals, I craft compelling designs that reflect your brand identity.</p>
+                <a href="#contact-container" class="service-item-btn">Contact me!</a>
             </div>
 
             <div class="service-item hidden">
                 <i class="fa-solid fa-video"></i>
                 <h3 class="service-item-title">Video Editing</h3>
-                <p class="service-item-paragraph">I offer a wide range of video editing services, including video
-                    editing, motion graphics, and color grading. I'm passionate about creating unique and captivating
-                    videos that reflect the essence of your brand.</p>
-                <a href="#contact-container" class="service-item-btn">Make order!</a>
+                <p class="service-item-paragraph">I deliver exceptional video editing services, providing comprehensive solutions to bring your vision to life. From captivating trailers to polished standard videos and engaging social media content, I offer tailored editing services to suit your needs.</p>
+                <a href="#contact-container" class="service-item-btn">Contact me!</a>
             </div>
 
             <div class="service-item hidden">
                 <i class="fa-solid fa-laptop-code"></i>
-                <h3 class="service-item-title">Mobile Development</h3>
-                <p class="service-item-paragraph">I offer a wide range of web development services, including website
-                    development, web application development, and web design. I'm passionate about creating unique and
-                    captivating websites that reflect the essence of your brand.</p>
-                <a href="#contact-container" class="service-item-btn">Make order!</a>
+                <h3 class="service-item-title">Front-End Development</h3>
+                <p class="service-item-paragraph">I have experience in front-end development, focusing on crafting intuitive and visually appealing interfaces that enhance user experiences. From responsive websites to interactive web applications, I leverage the latest technologies to create engaging digital experiences.</p>
+                <!-- <h3 class="service-item-title">Mobile Development</h3> -->
+                <!-- <p class="service-item-paragraph">I excel in mobile app development, specializing in cross-platform solutions using the Flutter framework. From concept to deployment, I deliver high-quality apps that provide seamless user experiences across multiple platforms.</p> -->
+                <a href="#contact-container" class="service-item-btn">Contact me!</a>
             </div>
             <div class="service-item hidden">
                 <i class="fa-solid fa-pen-ruler"></i>
                 <h3 class="service-item-title">UI/UX Design</h3>
-                <p class="service-item-paragraph">I offer a wide range of web development services, including website
-                    development, web application development, and web design. I'm passionate about creating unique and
-                    captivating websites that reflect the essence of your brand.</p>
-                <a href="#contact-container" class="service-item-btn">Make order!</a>
+                <p class="service-item-paragraph">I'm skilled in UI-UX design, specializing in creating intuitive interfaces that prioritize user experience. From wireframing to prototyping, I focus on designs that enhance usability and engagement, ensuring seamless interaction for your audience.</p>
+                <a href="#contact-container" class="service-item-btn">Contact me!</a>
             </div>
         </div>
 
@@ -230,11 +173,11 @@
             <form action="https://formspree.io/f/xzbloyee" method="POST">
                 <p class=" form-title">Contact me!</p>
                 <label>Full Name</label><br>
-                <input type="text" name="full-name" placeholder="Foulen Fouleni" required></input><br>
+                <input type="text" name="full-name" placeholder="First and Last Name" required></input><br>
                 <label>Email</label><br>
-                <input type="email" name="email" placeholder="foulenfouleni@gmail.com" required></input><br>
+                <input type="email" name="email" placeholder="example@gmail.com" required></input><br>
                 <label>Messege</label><br>
-                <textarea name="messege" placeholder="Hello.." required></textarea>
+                <textarea name="messege" placeholder="Type Your Message.." required></textarea>
                 <button class="send-btn" onclick="resetForm()" type="submit">Send</button>
             </form>
         </div>

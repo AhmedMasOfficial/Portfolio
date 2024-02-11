@@ -91,7 +91,7 @@ header {
     text-decoration: none;
     color: #edcdff;
     font-size: calc(10px + 0.5vw);
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 15px;
     padding: 10px 20px;
 
@@ -624,7 +624,7 @@ label {
 
 form {
     width: clamp(400px, 50%, 800px);
-    /* border-radius: 10px; */
+    border-radius: 10px;
     padding: 40px;
     background-color: #1c0029;
     border: #e7bdfd 2px solid;
@@ -645,11 +645,14 @@ textarea {
 input {
     height: 45px;
     font-size: x-large;
+    border-radius: 10px;
 }
 
 textarea {
     height: 90px;
     font-size: x-large;
+    border-radius: 10px;
+
 }
 
 .form-title {
@@ -674,8 +677,8 @@ textarea {
     padding: 10px 30px;
     cursor: pointer;
     margin-top: 20px;
-    /* border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-style: solid;
     border-color: #1c0029;
 }
@@ -690,13 +693,18 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: #1c00298f;
-    font-size: x-large;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
+    /* filter: opacity(0.8); */
 }
 
 @media screen and (max-width: 868px) {
     form {
         width: 100%;
+        border-radius: 0;
+        border: #1c0029;
+        box-shadow: none;
+
     }
 
     .form-title {
@@ -817,6 +825,7 @@ textarea::placeholder {
     border-top: #e7bdfd solid 2px;
     box-shadow: 0px 5px 0px 0px #1c0029;
     text-transform: uppercase;
+    letter-spacing: 4px;
     padding: 15px 0px;
     text-align: center;
     color: #e7bdfd;
@@ -1003,6 +1012,7 @@ textarea::placeholder {
     cursor: pointer;
     /* margin-top: 10px; */
     border: solid 2px #e7bdfd;
+    border-radius: 4px;
     /* justify-self: end; */
 }
 
@@ -1014,6 +1024,34 @@ textarea::placeholder {
 }
 
 
+/* =================================================================
+==================== moving background =======================================*/
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 50% -100%;
+        /* Move background to the top-right */
+    }
+}
+
+#blur-background-img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d2a1ff;
+    opacity: 0.7;
+    z-index: -1;
+    background-image: linear-gradient(#9200de 1.3px, transparent 1.3px), linear-gradient(to right, #9200de 1.3px, #d2a1ff 1.3px);
+    background-size: 26px 26px;
+    animation: moveBackground 150s linear infinite;
+    /* Adjust animation duration as needed */
+}
 
 /* ================================================================================================================
 ==================== animation =================================================================*/
