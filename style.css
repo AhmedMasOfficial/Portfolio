@@ -25,7 +25,7 @@ header {
     align-items: center;
     /* background-color: blueviolet; */
     background-color: rgb(28, 0, 41);
-    z-index: 2;
+    z-index: 5;
 }
 
 .h2-header {
@@ -133,7 +133,7 @@ body {
 .backgroundSide {
     width: 20%;
     display: inline;
-    background-color: #e7bdfd;
+    /* background-color: #e7bdfd; */
     height: 100vh;
     position: fixed;
     z-index: -2;
@@ -149,34 +149,34 @@ body {
 
 .side-div {
     padding: 10px;
-    width:250px;
+    min-width: 250px;
     background: #e7bdfd;
-    transition: transform 0.3s ease;
-    position: absolute; /* Position the sidebar */
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1; 
+    /* transition: transform 0.3s ease; */
+    z-index: 0;
     margin-left: 0px;
-    display: none !important;
+    transition: all 0.3s ease;
+    /* display: none !important; */
 }
 
 #burger-icon {
     cursor: pointer;
     position: absolute;
+    margin-left: 250px;
+    border-radius: 50%;
     top: 10px;
     left: 10px;
     width: 40px;
     aspect-ratio: 1/1;
-    z-index: 99999999;
-    display: none; /* Initially hide the burger icon on larger screens */
+    z-index: 3;
+    display: none;
+    background-color: #1c0029;
+    border: 2px solid #e7bdfd;
+    /* Initially hide the burger icon on larger screens */
 }
 
-#burger-icon i{
-    color:rgb(28, 0, 41);
+#burger-icon i {
+    color:#e7bdfd;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .sidebar.hide {
@@ -184,18 +184,30 @@ body {
         margin-left: -250px;
     }
 
-    .section{
+    .side-div {
+        position: absolute;
+        /* Position the sidebar */
+        top: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .section {
         overflow-x: hidden;
     }
+
     #burger-icon {
-        display: block; /* Show the burger icon on smaller screens */
+        display: flex;
+        align-items: center;
+    justify-content: center;
+        /* Show the burger icon on smaller screens */
     }
 }
 
 .section {
     flex-grow: 1;
     display: none;
-    margin-left:0;
+    margin-left: 0;
 }
 
 .design {
@@ -720,9 +732,11 @@ textarea::placeholder {
         font-size: 14px;
     }
 
-    input,textarea {
+    input,
+    textarea {
         font-size: 14px;
     }
+
     .send-btn {
         font-size: 14px;
     }
@@ -737,16 +751,14 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: url("images/Stocks333.png")
-        no-repeat fixed 
-    ;
-    background-color: rgba(28, 0, 41,1);
+    background: url("images/Stocks333.png") no-repeat fixed;
+    background-color: rgba(28, 0, 41, 1);
     filter: brightness(1.7);
-    filter:saturate(1.5);
+    filter: saturate(1.5);
     /* filter: blur(2px); */
     background-position: center;
     background-size: cover;
-    background-blend-mode:soft-light;
+    background-blend-mode: soft-light;
     /* background: radial-gradient(circle, rgba(28,0,41,1) 0%, rgb(42, 0, 68) 100%); */
     padding: calc(40px + 0.5vw);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
@@ -911,6 +923,7 @@ textarea::placeholder {
         font-size: 12px;
         padding: 10px 0;
     }
+
     .exp-heading {
         font-size: 20px;
     }
@@ -956,18 +969,16 @@ textarea::placeholder {
     align-items: center;
     text-align: center;
     /* background: url("images/Stocks(ECCENTRIC)22.png") */
-    background: url("images/Stocks344.png")
-        no-repeat fixed
-    ;
-    background-color: rgba(28, 0, 41,1);
+    background: url("images/Stocks344.png") no-repeat fixed;
+    background-color: rgba(28, 0, 41, 1);
     background-position: center;
     background-size: cover;
-    background-blend-mode:soft-light;
+    background-blend-mode: soft-light;
     padding: calc(40px + 0.5vw);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
 }
 
-.service-item{
+.service-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -976,7 +987,7 @@ textarea::placeholder {
     /* background-color: rgba(28, 0, 41,1); */
     background-position: center;
     background-size: cover;
-    background-blend-mode:soft-light;
+    background-blend-mode: soft-light;
     padding: calc(20px + 0.5vw);
     border: 2px solid #e7bdfd;
     backdrop-filter: blur(40px);
@@ -999,7 +1010,8 @@ textarea::placeholder {
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
-.service-item-btn{
+
+.service-item-btn {
     margin-top: auto;
     background-color: #e7bdfd;
     font-size: 12px;
@@ -1055,29 +1067,30 @@ textarea::placeholder {
 
 /* ================================================================================================================
 ==================== animation =================================================================*/
-.hidden-move{
+.hidden-move {
     opacity: 0;
     /* filter: blur(5px); */
     transform: translateX(-100px);
     transition: all 0.5s ease-in;
 }
 
-.show{
+.show {
     opacity: 1;
     transform: translateX(0);
     /* filter: blur(0px); */
 }
 
-.show2{
+.show2 {
     opacity: 1 !important;
     filter: blur(0px) !important;
 }
-.hidden{
+
+.hidden {
     opacity: 0;
     filter: blur(5px);
     transition: all 0.5s ease-in;
 }
 
-.infoParagraph{
+.infoParagraph {
     transition-delay: 200ms;
 }

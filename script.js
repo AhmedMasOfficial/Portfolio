@@ -193,14 +193,15 @@ function hide() {
 ////////////////////////////////////////////////////////////////////////
 
 const grid_design = document.querySelector(".grid-container-design");
-let item_image = ["images/IG-1.png","images/IG-2.png","images/IG-3.png", "images/IG-4-3.png","images/pic1-2.png", "images/pic2-1.png","images/insta.png", "images/posts.ai_1200_630_px_1500_1500_px_1.png",
+
+let item_image = ["images/IG-1.png", "images/IG-2.png", "images/IG-3.png", "images/IG-4-3.png", "images/pic1-2.png", "images/pic2-1.png", "images/insta.png",
+    "images/test 101.png", "images/band-roll-1.png", "images/band-roll-2.png", "images/band-roll-3.png", "images/99 copy 2.png", "images/insta2.png",
+    "images/posts.ai_1200_630_px_1500_1500_px_1.png",
     "images/340653563_949680539392767_4660127515563206705_n.webp",
     "images/2-11.png", "images/113.png", "images/1122.png",
     "images/2-logo-nmtc.png", "images/+Artboard 32_2.png", "images/official logo.png",
-    "images/insta_ipsas_cyber.png", "images/insta3.png", "images/ezfhbze.jpg",
-    "images/profil-pic.png", "images/1.jpg", "images/2.jpg", "images/3.jpg",
-    "images/4.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg",
-    "images/9.jpg", "images/10.jpg", "images/11.jpg", "images/12.jpg"];
+    "images/insta_ipsas_cyber.png", "images/insta3.png", "images/gamefest.png",
+    "images/profil-pic.png", "images/1.jpg", "images/2.jpg"];
 
 for (var i = 0; i < item_image.length; i++) {
     grid_design.innerHTML += `<img class="item item-design" onclick="blured(this)" src="${item_image[i]}">`;
@@ -216,35 +217,37 @@ for (var i = 0; i < item_image.length; i++) {
 ////////////////////////////////////////////////////////////////
 
 function blured(object) {
-    var source = object.src;
-    full.innerHTML = "";
-    full.style.backgroundImage = `url("${source}")`;
-    full.style.display = "block";
-    background.style.display = "block";
-    next.style.display = "block";
-    prev.style.display = "block";
+    var screenWidth = window.innerWidth;
+    if (screenWidth > 1000) {
+        var source = object.src;
+        full.innerHTML = "";
+        full.style.backgroundImage = `url("${source}")`;
+        full.style.display = "block";
+        background.style.display = "block";
+        next.style.display = "block";
+        prev.style.display = "block";
 
-    for (let i = 0; i < items.length; i++) {
-        if (source == items[i].src) {
-            current = i;
-            break;
+        for (let i = 0; i < items.length; i++) {
+            if (source == items[i].src) {
+                current = i;
+                break;
+            }
+        }
+
+        if (current == 0) {
+            prev.style.display = "none";
+        }
+        else {
+            prev.style.display = "block";
+        }
+
+        if (current + 1 == items.length) {
+            next.style.display = "none";
+        }
+        else {
+            next.style.display = "block";
         }
     }
-
-    if (current == 0) {
-        prev.style.display = "none";
-    }
-    else {
-        prev.style.display = "block";
-    }
-
-    if (current + 1 == items.length) {
-        next.style.display = "none";
-    }
-    else {
-        next.style.display = "block";
-    }
-
 }
 
 
@@ -354,24 +357,24 @@ next.addEventListener("click", () => {
 document.addEventListener("keydown", (e) => {
     if (e.key == "ArrowRight") {
         if (video_btn.classList.contains("active")) {
-            if(next.style.display == "block"){
+            if (next.style.display == "block") {
                 to_next_vid(current);
             }
         }
         else {
-            if(next.style.display == "block"){
+            if (next.style.display == "block") {
                 to_next();
             }
         }
     }
     else if (e.key == "ArrowLeft") {
         if (video_btn.classList.contains("active")) {
-            if(prev.style.display == "block"){
+            if (prev.style.display == "block") {
                 to_prev_vid(current);
             }
         }
         else {
-            if(prev.style.display == "block"){
+            if (prev.style.display == "block") {
                 to_prev();
             }
         }

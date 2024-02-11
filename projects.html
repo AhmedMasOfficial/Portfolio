@@ -156,10 +156,12 @@
             sidebar.classList.toggle('hide');
             if (sidebar.classList.contains('hide')) {
                 document.getElementById('burger-icon').style.marginLeft = '0';
-                mainContent.style.marginLeft = '0';
+                // mainContent.style.marginLeft = '0';
+                document.querySelector('.side-div').style.marginLeft = '-250px';
             } else {
                 document.getElementById('burger-icon').style.marginLeft = '250px';
-                mainContent.style.marginLeft = '250px'; // Adjust width as needed
+                // mainContent.style.marginLeft = '250px'; // Adjust width as needed
+                document.querySelector('.side-div').style.marginLeft = '0';
             }
         });
 
