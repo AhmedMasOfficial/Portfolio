@@ -152,7 +152,7 @@ body {
     min-width: 250px;
     background: #e7bdfd;
     /* transition: transform 0.3s ease; */
-    z-index: 0;
+    z-index: 3;
     margin-left: 0px;
     transition: all 0.3s ease;
     /* display: none !important; */
@@ -261,17 +261,17 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #aeaeae;
+    background: #d2a1ff
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #654294;
+    background:#3a0055;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #472377;
+    background: #1c0029;
 }
 
 
@@ -330,8 +330,12 @@ body {
 .side-name {
     font-size: larger;
     color: rgb(28, 0, 41);
-    font-weight: 100;
+    font-weight: 600;
     margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* border-bottom: 2px solid #1c0029; */
 }
 
 
@@ -355,8 +359,11 @@ body {
 .li-side {
     margin: 15px 0;
     padding: 10px 20px;
-    color: #e7bdfd;
-    background-color: rgb(96, 67, 112);
+    color: #1c0029;
+    font-weight: 900;
+    /* color: #e7bdfd; */
+    /* background-color: rgb(96, 67, 112); */
+    border: 3px solid #1c0029;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
@@ -364,6 +371,7 @@ body {
 
 .li-side.active {
     background-color: rgb(28, 0, 41);
+    color: #e7bdfd;
     /* background: linear-gradient(0deg, rgb(53, 0, 97) 0%, #3e2163 100%); */
 }
 
@@ -373,6 +381,7 @@ body {
 
 .li-side:hover {
     background-color: rgb(28, 0, 41);
+    color: #e7bdfd;
 }
 
 p.side-name {
