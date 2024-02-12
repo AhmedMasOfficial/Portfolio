@@ -586,7 +586,7 @@ header {
     position: fixed;
     background-position: center;
     background-size: cover;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

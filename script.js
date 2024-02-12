@@ -218,7 +218,7 @@ for (var i = 0; i < item_image.length; i++) {
 
 function blured(object) {
     var screenWidth = window.innerWidth;
-    if (screenWidth > 1000) {
+    if (screenWidth > 900) {
         var source = object.src;
         full.innerHTML = "";
         full.style.backgroundImage = `url("${source}")`;
