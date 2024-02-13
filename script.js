@@ -49,18 +49,49 @@ function showDesign() {
     items = document.getElementsByClassName("item-design");
     design_section.style.display = "block";
     design_btn.classList.add("active");
+
+    if (window.innerWidth < 900) {
+        document.getElementById('burger-icon').style.marginLeft = '0';
+        document.querySelector('.side-div').style.marginLeft = '-250px';
+        document.querySelector('.side-div').classList.add('hide');
+        console.log('hello design');
+    }
 }
+
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////
+//////////////////////////////////////x
+
 function showVideo() {
     hideAll();
     items = document.getElementsByClassName("item-video");
     video_section.style.display = "block";
     video_btn.classList.add("active");
+
+    if (window.innerWidth < 900) {
+        console.log("hello");
+        document.getElementById('burger-icon').style.marginLeft = '0';
+        document.querySelector('.side-div').style.marginLeft = '-250px';
+        document.querySelector('.side-div').classList.add('hide');
+    }
 }
 function show3d() {
     hideAll();
     items = document.getElementsByClassName("item-3d");
     design3d_section.style.display = "block";
     design3d_btn.classList.add("active");
+    document.getElementById('burger-icon').style.marginLeft = '0';
+    document.querySelector('.side-div').style.marginLeft = '-250px';
 
 }
 function showWeb() {
@@ -68,6 +99,8 @@ function showWeb() {
     items = document.getElementsByClassName("item-web")
     web_section.style.display = "block";
     web_btn.classList.add("active");
+    document.getElementById('burger-icon').style.marginLeft = '0';
+    document.querySelector('.side-div').style.marginLeft = '-250px';
 
 }
 function showMobile() {
@@ -75,6 +108,8 @@ function showMobile() {
     items = document.getElementsByClassName("item-mobile");
     mobile_section.style.display = "block";
     mobile_btn.classList.add("active");
+    document.getElementById('burger-icon').style.marginLeft = '0';
+    document.querySelector('.side-div').style.marginLeft = '-250px';
 
 }
 function showDesktop() {
@@ -82,6 +117,8 @@ function showDesktop() {
     items = document.getElementsByClassName("item-desktop");
     desktop_section.style.display = "block";
     desktop_btn.classList.add("active");
+    document.getElementById('burger-icon').style.marginLeft = '0';
+    document.querySelector('.side-div').style.marginLeft = '-250px';
 
 }
 function showGame() {
@@ -89,6 +126,8 @@ function showGame() {
     items = document.getElementsByClassName("item-game");
     game_section.style.display = "block";
     game_btn.classList.add("active");
+    document.getElementById('burger-icon').style.marginLeft = '0';
+    document.querySelector('.side-div').style.marginLeft = '-250px';
 
 }
 function showAi() {
@@ -96,6 +135,8 @@ function showAi() {
     items = document.getElementsByClassName("item-ai");
     ai_section.style.display = "block";
     ai_btn.classList.add("active");
+    document.getElementById('burger-icon').style.marginLeft = '0';
+    document.querySelector('.side-div').style.marginLeft = '-250px';
 
 }
 
