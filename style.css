@@ -152,7 +152,7 @@ body {
     min-width: 250px;
     background: #e7bdfd;
     /* transition: transform 0.3s ease; */
-    z-index: 3;
+    z-index: 2;
     margin-left: 0px;
     transition: all 0.3s ease;
     /* display: none !important; */
