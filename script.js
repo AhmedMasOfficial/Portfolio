@@ -58,20 +58,6 @@ function showDesign() {
     }
 }
 
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////
-//////////////////////////////////////x
-
 function showVideo() {
     hideAll();
     items = document.getElementsByClassName("item-video");
@@ -361,28 +347,33 @@ for (let i = 0; i < video_thubnails.length; i++) {
 
 let current = 0;
 function blured_video(i) {
-    full.style.backgroundImage = "none";
-    current = i;
-    full.innerHTML = `<iframe src="${video_links[current]}" style="aspect-ratio:16/9;width:60vw;transform:translate(0,10%)" allow="autoplay" allowfullscreen></iframe>`;
-    full.style.display = "block";
-    background.style.display = "block";
-    next.style.display = "block";
-    prev.style.display = "block";
-
-    if (current == 0) {
-        prev.style.display = "none";
-    }
-    else {
-        prev.style.display = "block";
-    }
-
-    if (current + 1 == video_links.length) {
-        next.style.display = "none";
-    }
-    else {
+    if (window.innerWidth > 768) {
+        full.style.backgroundImage = "none";
+        current = i;
+        full.innerHTML = `<iframe src="${video_links[current]}" style="aspect-ratio:16/9;width:60vw;transform:translate(0,10%)" allow="autoplay" allowfullscreen></iframe>`;
+        full.style.display = "block";
+        background.style.display = "block";
         next.style.display = "block";
-    }
+        prev.style.display = "block";
 
+        if (current == 0) {
+            prev.style.display = "none";
+        }
+        else {
+            prev.style.display = "block";
+        }
+
+        if (current + 1 == video_links.length) {
+            next.style.display = "none";
+        }
+        else {
+            next.style.display = "block";
+        }
+    }
+    //for mobile devices so it just take it to the link instead of the custom full view
+    else {
+        window.location.href = video_links[i];
+    }
 }
 
 next.addEventListener("click", () => {

@@ -152,7 +152,7 @@ body {
     min-width: 250px;
     background: #e7bdfd;
     /* transition: transform 0.3s ease; */
-    z-index: 2;
+    z-index: 1;
     margin-left: 0px;
     transition: all 0.3s ease;
     /* display: none !important; */
@@ -248,7 +248,7 @@ body {
     background-color: #ffffff10;
     backdrop-filter: blur(15px);
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -595,7 +595,7 @@ header {
     position: fixed;
     background-position: center;
     background-size: cover;
-    top: 55%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
