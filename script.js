@@ -225,8 +225,11 @@ let item_image = ["images/IG-1.png", "images/IG-2.png", "images/IG-3.png", "imag
     "images/test 101.png", "images/band-roll-1.png", "images/band-roll-2.png", "images/band-roll-3.png", "images/99 copy 2.png", "images/insta2.png",
     "images/posts.ai_1200_630_px_1500_1500_px_1.png",
     "images/340653563_949680539392767_4660127515563206705_n.webp",
-    "images/2-11.png", "images/113.png", "images/1122.png",
-    "images/2-logo-nmtc.png", "images/+Artboard 32_2.png", "images/official logo.png",
+    "images/2-11.png", "images/113.png",
+    "images/1122.png",
+    "images/2-logo-nmtc.png", "images/+Artboard 32_2.png",
+    "images/111.jpg","images/11_insta.jpg","images/1_insta.jpg",
+    "images/official logo.png",
     "images/insta_ipsas_cyber.png", "images/insta3.png", "images/gamefest.png",
     "images/profil-pic.png", "images/1.jpg", "images/2.jpg"];
 
