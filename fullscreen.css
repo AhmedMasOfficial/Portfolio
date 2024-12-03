@@ -1,0 +1,193 @@
+:root {
+    --default-cursor: url('cursors/default.png') 5 5, auto;
+    --pointer-cursor: url('cursors/pointer.png') 5 5, pointer;
+}
+
+
+#blur-background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #0a0a0a80;
+    backdrop-filter: blur(15px);
+    display: none;
+    z-index: 2;
+}
+
+.full-container{
+    opacity: 1;
+}
+.full-container:hover .full-gradient-layer,
+.full-container:hover .full-details > *:not(:last-child) {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.full-gradient-layer{
+    position: absolute;
+    inset: 0; /* Fill the entire item-container */
+    background: linear-gradient(10deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index:0; /* Place the gradient layer behind the item-details */
+    border-radius: 10px;
+}
+
+.full-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: calc(5px + 2vmin);
+    z-index: 1;
+    max-width: 40vmax;
+    padding: 0px 10px;
+    /* padding-bottom: 5px; */
+    padding-left: 20px;
+}
+
+.more-padding{
+    padding-bottom: 20px;
+}
+
+.full-title{
+    font-size: clamp(1.7vmin, 1.7vmax, 3.4vmin);
+    font-weight: 700;
+    color: #e7bdfd;
+    text-transform: uppercase;
+}
+.full-tools{
+    font-size:clamp(1vmin, 1vmax, 2vmin);
+    font-weight: 400;
+    color: #f5e3ffa3;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    /* text-decoration: underline; */
+}
+.keyword{
+    font-weight: 900;
+    color: #e7bdfd;
+}
+.full-description{
+    font-size: clamp(1vmin, 1vmax, 2vmin);
+    font-weight: 400;
+    color: #f5e3ffa3;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.full-link{
+    font-size: clamp(1vmin, 1vmax, 2vmin);
+    font-weight: 700;
+    color: #1c0029;
+    background-color: #e7bdfdD0;
+    border-radius: 5px;
+    margin-top: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: var(--pointer-cursor);
+    /* border: 2px solid #1c0029; */
+}
+
+.full-link:hover{
+    background-color: #db98ff;
+    color: #1c0029;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.full-link:active{
+    background-color: #e7bdfd;
+    color: #1c0029;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.full-wrapper{
+    padding-bottom: 10px;
+}
+
+/*====================================== next/previous CARD button =============================================== */
+
+
+
+.next_prev {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(50, 29, 68, 0.527);
+    position: fixed;
+    border-radius: 100%;
+    border-color: rgba(255, 255, 255, 0.753);
+    border-width: 3px;
+    border-style: solid;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    cursor: var(--pointer-cursor);
+    backdrop-filter: blur(5px);
+}
+
+#prev-card {
+    left: calc(10% - 50px);
+}
+
+#next-card {
+    right: calc(10% - 50px);
+}
+
+.arrow {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #e7bdfd;
+    transform: translate(-50%, -50%);
+    cursor: var(--pointer-cursor);
+
+}
+
+@media screen and (max-width: 768px) {
+    #prev-card{
+        left: calc(10% - 30px);
+    }
+    #next-card {
+        right: calc(10% - 30px);
+    }
+    .next_prev {
+        width: 60px;
+        height: 60px;
+        border-width: 2px;
+    }
+    .arrow {
+        font-size: 30px;
+    }
+}
+
+/* Close button styles */
+.close-button {
+    position: absolute;
+    top: 15px; /* Adjust as needed */
+    right: 15px; /* Adjust as needed */
+    background: none;
+    border: none;
+    color: #e7bdfd; /* Set the desired pink color */
+     /* Size of the icon */
+    z-index: 100; /* Ensure it stays on top */
+     /* Add shadow */
+}
+
+.close-button  i{
+    cursor: var(--pointer-cursor);
+    /* object-fit: contain; */
+    font-size: 30px;
+    transition: transform 0.2s ease;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Use text-shadow for icons */
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.close-button:hover i{
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    text-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+
+.close-button:active i{
+    transform: scale(1.1); /* Slightly shrink on click */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Slightly reduced shadow on click */
+}

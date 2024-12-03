@@ -1,0 +1,752 @@
+{
+  "skills": [
+    {
+      "name": "design",
+      "projects": [
+        {
+          "title": "NMTC V4",
+          "thumbnail": "images/test 101.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/test 101.png"
+            }
+          ]
+        },
+        {
+          "title": "NMTC V4",
+          "thumbnail": "images/99 copy 2.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/99 copy 2.jpg"
+            }
+          ]
+        },
+        {
+          "title": "NMTC V4",
+          "thumbnail": "images/insta2.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/insta2.png"
+            }
+          ]
+        },
+        {
+          "title": "NMTC V4",
+          "thumbnail": "images/test 55 (1).jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/test 55 (1).jpg"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "description": "A graphic design project.",
+          "thumbnail": "images/IG-1.png",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/IG-1.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "thumbnail": "images/IG-2.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/IG-2.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "description": "A graphic design project.",
+          "thumbnail": "images/IG-3.png",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/IG-3.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "description": "A graphic design project.",
+          "thumbnail": "images/IG-4-3.png",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/IG-4-3.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "description": "A graphic design project.",
+          "thumbnail": "images/pic1-2.png",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/pic1-2.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "thumbnail": "images/pic2-1.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/pic2-1.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft club isims",
+          "thumbnail": "images/instagram1.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Canva"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/instagram1.png"
+            }
+          ]
+        },
+        {
+          "title": "CodeSell event",
+          "thumbnail": "images/posts.ai_1200_630_px_1500_1500_px_1.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/posts.ai_1200_630_px_1500_1500_px_1.png"
+            }
+          ]
+        },
+        {
+          "title": "CodeSell event",
+          "thumbnail": "images/340653563_949680539392767_4660127515563206705_n.webp",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/340653563_949680539392767_4660127515563206705_n.webp"
+            }
+          ]
+        },
+        {
+          "title": "Photographer",
+          "thumbnail": "images/hsin.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/hsin.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Step Up Academy",
+          "thumbnail": "images/6666.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/6666.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Step Up Academy",
+          "thumbnail": "images/4747.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/4747.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Step Up Academy",
+          "thumbnail": "images/iqzciau.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/iqzciau.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Step Up Academy",
+          "thumbnail": "images/foiuzfohf.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/foiuzfohf.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Step Up Academy",
+          "thumbnail": "images/qqcjiqg.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/qqcjiqg.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Solar Energy Company",
+          "thumbnail": "images/5454.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/5454.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Solar Energy Company",
+          "thumbnail": "images/5555.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/5555.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Solar Energy Company",
+          "thumbnail": "images/4444.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/4444.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Google Club ISIMS",
+          "thumbnail": "images/111.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/111.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Google Club ISIMS",
+          "thumbnail": "images/11_insta.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/11_insta.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Google Club ISIMS",
+          "thumbnail": "images/1_insta.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/1_insta.jpg"
+            }
+          ]
+        },
+        {
+          "title": "NMTC V3",
+          "thumbnail": "images/2-logo-nmtc.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/2-logo-nmtc.png"
+            }
+          ]
+        },
+        {
+          "title": "Arti Dev",
+          "thumbnail": "images/+Artboard 32_2.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/+Artboard 32_2.png"
+            }
+          ]
+        },
+        {
+          "title": "Google Club ISIMS",
+          "thumbnail": "images/official logo.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/official logo.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft Club ISIMS",
+          "thumbnail": "images/2-11.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/2-11.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft Club ISIMS",
+          "thumbnail": "images/113.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/113.png"
+            }
+          ]
+        },
+        {
+          "title": "Microsoft Club ISIMS",
+          "thumbnail": "images/1122.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/1122.png"
+            }
+          ]
+        },
+        {
+          "title": "GIG design contest",
+          "thumbnail": "images/gig3.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Photoshop"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/gig3.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Fruits shop",
+          "thumbnail": "images/Artboard 14.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/Artboard 14.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Google Club ISIMS",
+          "thumbnail": "images/insta_ipsas_cyber.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/insta_ipsas_cyber.png"
+            }
+          ]
+        },
+        {
+          "title": "Google Club ISIMS",
+          "thumbnail": "images/insta3.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/insta3.png"
+            }
+          ]
+        },
+        {
+          "title": "GameFest event",
+          "thumbnail": "images/gamefest.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Illustrator"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/gamefest.png"
+            }
+          ]
+        },
+        {
+          "title": "Personal",
+          "thumbnail": "images/profil-pic.png",
+          "description": "A graphic design project.",
+          "tools": [
+            "Photoshop"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/profil-pic.png"
+            }
+          ]
+        },
+        {
+          "title": "Anime Fan Art",
+          "thumbnail": "images/1.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "PS Touch"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/1.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Anime Fan Art",
+          "thumbnail": "images/2.jpg",
+          "description": "A graphic design project.",
+          "tools": [
+            "PS Touch"
+          ],
+          "media": [
+            {
+              "type": "image",
+              "src": "images/2.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "projects": [
+        {
+          "title": "NMTC V3 - experience",
+          "description": "Emotional video on 'National Microsoft Technologies Camp V3' event mermories.it's a personal video that showcases how the event was for us as organizers.   Song name 'Experience'",
+          "thumbnail": "Video/Screenshot 2023-08-30 185101.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1oCNEdWflL9xfnK-8C6MllR46-fj3KaVI/preview"
+            }
+          ]
+        },
+        {
+          "title": "All might edit",
+          "description": "it's a fan made video for the anime 'My hero academia' and the character 'All might'. it's purpose is to upagrade my skills in smooth transitions and effects.",
+          "thumbnail": "Video/Screenshot 2023-08-30 173808.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1GbzRTXswwPC4PtnFO50V2boMbpjk4WHR/preview"
+            }
+          ]
+        },
+        {
+          "title": "NMTC V3 - Gallerie",
+          "description": "A video that showcases the event 'National Microsoft Technologies Camp V3' in a creative way.",
+          "thumbnail": "Video/Screenshot 2023-10-25 225019.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1oCNEdWflL9xfnK-8C6MllR46-fj3KaVI/preview"
+            }
+          ]
+        },
+        {
+          "title": "Team presentation",
+          "description": "A video that showcases the team of ISIMS Google Student Club 2023-2024.",
+          "thumbnail": "Video/Screenshot 2023-10-25 230528.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1GbzRTXswwPC4PtnFO50V2boMbpjk4WHR/preview"
+            }
+          ]
+        },
+        {
+          "title": "Gallerie Edit",
+          "description": "A video that showcases a person in a creative way.",
+          "thumbnail": "Video/Screenshot 2023-08-30 184959.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1mrMxbGyRKBSGDQ7Wb7SFF3pbH4yJlDAW/preview"
+            }
+          ]
+        },
+        {
+          "title": "NMTC V3 - Hackathon",
+          "description": "A promotional video designed to convince people to participate in the NMTC V3 Hackathon, highlighting the exciting opportunities, challenges, and benefits of joining the event.",
+          "thumbnail": "Video/Screenshot 2023-08-30 184828.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1wXHQGfHHFYQo7qeqEmB3TvKGjsQq8vP6/preview"
+            }
+          ]
+        },
+        {
+          "title": "Website Presentation",
+          "description": "A video that showcases the NMTC event website and explains everything about it.",
+          "thumbnail": "Video/Screenshot 2023-08-30 184920.png",
+          "tools": [
+            "Sony Vegas Pro"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/15LB2BAsFTiqxuI07hT2k4owODvKqyC6d/preview"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "web",
+      "projects": [
+        {
+          "title": "Wa3ini",
+          "description": "An educational website with the purpose of sharing the knowladge about disabilities and how to deal with them. so that the family and the society can help the disabled person to live a normal life.",
+          "thumbnail": "web/project3/wa3ini.jpg",
+          "tools": [
+            "React",
+            "Tailwind"
+          ],
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1uFnoGbUIGBM21LOIcR8KNcTuj1c59X9C/preview"
+            },
+            {
+              "type": "image",
+              "src": "web/project3/wa3ini.jpg"
+            },
+            {
+              "type": "image",
+              "src": "web/project3/Screenshot 2024-12-03 003026.png"
+            },
+            {
+              "type": "image",
+              "src": "web/project3/Screenshot 2024-12-03 003222.png"
+            }
+          ]
+        },
+        {
+          "title": "Personal Portfolio",
+          "description": "A responsive personal portfolio website that showcases my work and skills so far.",
+          "thumbnail": "web/project2/portfolio.jpg",
+          "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "link": "https://ahmedmasmoudi2003.github.io/Portfolio",
+          "media": [
+            {
+              "type": "video",
+              "src": "https://drive.google.com/file/d/1BfbNIxCxOvmN7Gou3e1bSwN0FjlMGPo1/preview"
+            },
+            {
+              "type": "image",
+              "src": "web/project2/portfolio.jpg"
+            },
+            {
+              "type": "image",
+              "src": "web/project2/Screenshot 2024-12-03 002355.png"
+            }
+          ]
+        },
+        {
+          "title": "Connectini",
+          "description": "A platform connecting students with professionals for internships. It provides dashboards for students, companies, professors, and colleges to manage and track internships. This is a hackathon project prototype.",
+          "thumbnail": "web/project1/connectini.jpg",
+          "tools": [
+            "Tailwind",
+            "php native",
+            "MySQL"
+          ],
+          "link":"https://wa3ini.netlify.app/",
+          "media": [
+            {
+              "type": "image",
+              "src": "web/project1/connectini.jpg"
+            },
+            {
+              "type": "image",
+              "src": "web/project1/1714313987361.jpeg"
+            },
+            {
+              "type": "image",
+              "src": "web/project1/1714313978659.jpeg"
+            },
+            {
+              "type": "image",
+              "src": "web/project1/1714313992603.jpeg"
+            },
+            {
+              "type": "image",
+              "src": "web/project1/1714313976169.jpeg"
+            },
+            {
+              "type": "image",
+              "src": "web/project1/1714313975897.jpeg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

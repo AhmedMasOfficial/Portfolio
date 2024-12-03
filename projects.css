@@ -1,0 +1,433 @@
+/*====================================== grid with CARDs =============================================== */
+.container {
+    display: flex;
+    position: relative;
+    /* margin-top: 0; */
+}
+
+.backgroundColor {
+    width: 100%;
+    display: inline;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+}
+
+.backgroundSide {
+    width: 20%;
+    display: inline;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+}
+
+.grid-container {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    width: 100%;
+    /* Ensure at least 2 rows */
+    grid-auto-rows: 1fr; /* Optional: Set a base row height */
+    min-height: calc(2 * 300px + 50px); /* Adjust for two rows and gap */
+}
+
+
+.grid-container > * {
+    margin: 0; /* Adjust margins if needed */
+    width: 100%;
+}
+
+.side-div {
+    padding: 10px;
+    min-width: 250px;
+    max-width: 250px;
+    /* width: 250px; */
+    background: #e7bdfd;
+    z-index: 3;
+    margin-left: 0px;
+    transition: all 0.3s ease;
+    max-height: calc(100vh - var(--navbar-height, 0px));
+    /* min-height: calc(600px + var(--navbar-height, 0px)); */
+    overflow-y: auto;
+    position: sticky;
+}
+
+
+
+
+#burger-icon {
+    cursor: var(--pointer-cursor);
+    position: fixed;
+    margin-left: 250px;
+    border-radius: 50%;
+    top: calc(var(--navbar-height, 0px) + 10px);
+    left: 10px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    z-index: 4;
+    display: none;
+    background-color: #1c0029;
+    border: 2px solid #e7bdfd;
+}
+
+#burger-icon i {
+    color:#e7bdfd;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar.hide {
+        /* transform: translateX(-450px);  */
+        margin-left: -250px;
+    }
+
+    .side-div {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+
+    .section {
+        overflow-x: hidden;
+    }
+
+    #burger-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.section {
+    flex-grow: 1;
+    display: none;
+    margin-left: 0;
+    min-height: 80vh;
+}
+
+
+.item-container {
+    /*takes the size of its content*/
+    display: inline-block;
+    position: relative;
+    overflow: hidden; /* Ensures text doesn't overflow */
+    cursor: var(--pointer-cursor);
+    aspect-ratio: 1/1;
+    /* max-width: 300px; */
+}
+.item-gradient-layer {
+    cursor: var(--pointer-cursor);
+    position: absolute;
+    inset: 0; /* Fill the entire item-container */
+    background: linear-gradient(10deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index:0; /* Place the gradient layer behind the item-details */
+}
+.item-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    padding-bottom: 5px;
+    z-index: 1;
+    max-width: 85%;
+}
+.item-title{
+    font-size: 15px;
+    font-weight: 700;
+    color: #e7bdfd;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+.item-tools{
+    font-size: 10px;
+    font-weight: 400;
+    color: #e7bdfd;
+    padding: 0px 10px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item-hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e7bdfd;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Prevent interaction with the text */
+    transition: opacity 0.3s ease;
+    z-index: 1;   
+}
+
+.item-container:hover .item-hover-text {
+    opacity: 1; /* Make the text visible on hover */
+    filter: brightness(1) !important;
+}
+
+
+
+.item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: var(--pointer-cursor);
+}
+
+.item-container:hover img,
+.item-container:hover .item-details {
+    filter: brightness(0.2);
+}
+
+
+/*====================================== side div =============================================== */
+
+
+.side-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.side-name {
+    font-size: larger;
+    color: rgb(28, 0, 41);
+    font-weight: 600;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+
+.skill-list {
+    list-style: none;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.li-side {
+    margin: 15px 0;
+    padding: 10px 20px;
+    color: #1c0029;
+    font-weight: 900;
+    /* color: #e7bdfd; */
+    /* background-color: rgb(96, 67, 112); */
+    border: 3px solid #1c0029;
+    cursor: var(--pointer-cursor);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+.li-side.active {
+    background-color: rgb(28, 0, 41);
+    color: #e7bdfd;
+    /* background: linear-gradient(0deg, rgb(53, 0, 97) 0%, #3e2163 100%); */
+}
+
+.li-side.empty {
+    background-color: rgb(96, 67, 112);
+}
+
+.li-side:hover {
+    background-color: rgb(28, 0, 41);
+    color: #e7bdfd;
+}
+
+
+/**************************/
+
+
+.all-skill-section{
+    /* background-color: #e7bdfd; */
+    border-radius: 10px;
+    /* margin: 20px; */
+    
+}
+
+.all-skills{
+    padding: 15px;
+    background-color: #aaa ;
+    overflow-x: hidden;
+    flex-grow: 1;
+}
+
+.all-skill-section{
+    background-color: #e7bdfd;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    max-width: calc(100vw - 250px - 50px);
+    overflow: clip;
+}
+
+.skill-projects-wrapper {
+    position: relative; /* Establish a new positioning context */
+    overflow: hidden; /* Hide anything outside the wrapper */
+    /* max-width: calc(100vw - 250px); */
+}
+
+
+
+
+/* Scrollable area */
+.skill-projects {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    margin: 15px 15px 0 15px;
+    padding-bottom: 15px;
+    display: flex; /* Ensure horizontal alignment of children */
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+    gap: 15px;
+    position: relative; /* Ensure the gradient aligns with this */
+}
+
+
+
+
+.gradient-layer {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    height: 100%;
+    width: 200px; /* Adjust as needed for gradient width */
+    background: linear-gradient(to left, #e7bdfd, rgba(231, 189, 253,0)); /* Gradient from pink to transparent */
+    pointer-events: none; /* Allow interaction with content underneath */
+    z-index: 1; /* Place above scrollable content */
+}
+
+
+.skill-projects::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+}
+
+.skill-projects::-webkit-scrollbar-thumb {
+    background-color: #1c0029; /* Scrollbar color */
+    border-radius: 4px; /* Rounded edges */
+}
+
+.skill-projects::-webkit-scrollbar-thumb:hover {
+    background-color: #420060; /* Change color on hover */
+}
+
+.skill-projects > * {
+    flex: 0 0 300px; /* Enforce a strict width of 300px */
+    height: 300px; /* Set a consistent height (adjust as needed) */
+    overflow: hidden; /* Hide overflowing content inside items */
+}
+
+
+.all-skills{
+    /* max-width: 100%; */
+    overflow: clip !important;
+}
+
+
+.skill-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1c0029;
+    -webkit-text-stroke: 1px #1c0029;
+    text-transform: uppercase;
+    padding: 0px 15px;
+    display: inline-flex;
+    font-family: 'Poppins', sans-serif !important;
+    cursor: var(--pointer-cursor);
+}
+
+
+.skill-title:hover h2{
+    /* color: #460066; */
+    text-decoration: underline;
+}
+.skill-title i {
+    color: #1c0029;
+    font-size: 25px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.skill-title:hover i{
+    padding-left: 15px;
+}
+
+.skill-fade-gradient{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    right: 15px;
+    background: linear-gradient(-90deg, rgba(231, 189, 253, 1) 0%, rgba(231, 189, 253, 0) 100%);
+    z-index: 0;
+    margin: 15px;
+}
+
+.h1-welcome{
+    font-size: calc(10px + 2vmin);
+    font-weight: bold;
+    color: #1c0029;
+    -webkit-text-stroke: 1px #1c0029;
+    text-transform: uppercase;
+    padding: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    /* letter-spacing: 1px; */
+    margin: 5px 0px;
+}
+
+.p-welcome{
+    font-size: calc(5px + 1vmin);
+    font-weight: 400;
+    color: #1c0029;
+    padding: 0px 10px;
+    font-weight: bold;
+    /* word-spacing: 5px; */
+    /* letter-spacing: 4px; */
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0px;
+}
+
+.welcome{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: #e7bdfd;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .welcome{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .all-skill-section {
+        max-width: calc(100vw - 40px); /* Match the width of .skill-projects */
+    }
+    .welcome{
+        width: 80vw;
+    }
+    .gradient-layer {
+        display: none;
+    }
+    .skill-projects {
+        margin-left: 5px;   
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,592 @@
+
+/* ================================================================================================================
+==============================================|| About ME ||======================================================
+================================================================================================================*/
+
+
+.myInfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    flex-direction: row;
+    background-color: #edcdff00;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: calc(40px + 0.5vw);
+}
+
+.h2-info {
+    font-size: calc(20px + 0.5vw);
+    font-weight: 700;
+    color: rgb(231, 189, 253);
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+.p-info {
+    font-size: calc(6px + 0.7vw);
+    /* font-weight: 400; */
+    color: rgba(231, 189, 253, 0.774);
+    font-family: 'Poppins', sans-serif;
+}
+
+.infoParagraph {
+    margin: 30px;
+    backdrop-filter: blur(2px);
+    border: #e7bdfd 2px solid;
+    box-shadow: -5px 5px 0px 0px #1c0029;
+    background-color: #1c0029;
+    padding: 30px;
+}
+
+.myImage {
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    background-image: url(images/ahmed_mas_.png);
+    background-position: center;
+    background-size: cover;
+    width: 30vw;
+    justify-self: center;
+    /* filter: saturate(50%); */
+}
+
+@media screen and (max-width: 768px) {
+    .myInfo {
+        grid-template-columns: 1fr;
+    }
+
+    .myImage {
+        width: 70vw;
+    }
+
+    .h2-info {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+
+    .p-info {
+        font-size: 12px;
+        padding: 0;
+        word-spacing: 0px;
+        letter-spacing: 0px;
+    }
+
+    .btn-container a {
+        padding: 10px 15px;
+    }
+
+    .infoParagraph {
+        margin: 10px 0;
+    }
+}
+
+.btn-container a {
+    font-size: calc(5px + 0.6vw);
+}
+
+.primary-btn {
+    background-color: #e7bdfd;
+    border: solid #1c0029;
+    color: #1c0029;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: var(--pointer-cursor);
+    /* margin-top: 20px; */
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    place-self: center;
+}
+
+
+.primary-btn:hover {
+    background-color: #1c0029;
+    color: #e7bdfd;
+    border-style: solid;
+    border-color: #e7bdfd;
+}
+
+.secendary-btn {
+    border: none;
+    color: #e7bdfd;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 30px;
+    cursor: var(--pointer-cursor);
+    display: flex;
+    place-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .secendary-btn {
+        margin: 10px 0;
+    }
+    
+}
+
+.secendary-btn:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;   
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+
+/* ================================================================================================================
+==============================================|| MY Skills ||======================================================
+================================================================================================================*/
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url("images/Stocks333.png") no-repeat fixed;
+    background-color: rgba(28, 0, 41, 1);
+    filter: brightness(1.7);
+    filter: saturate(1.5);
+    /* filter: blur(2px); */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    padding: calc(40px + 0.5vw);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+
+.skills-heading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #e7bdfd;
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+.skills-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    color: #e7bdfd;
+    padding: 15px 30px;
+    word-spacing: 5px;
+    letter-spacing: 4px;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list p {
+    margin: 15px 10px;
+    padding: 10px 20px;
+    color: #e7bdfd;
+    backdrop-filter: blur(10px);
+    /* background-color: rgb(96, 67, 112); */
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 50px;
+    border: 2px solid #e7bdfd;
+}
+
+.skills-list p:hover {
+    background-color: rgb(28, 0, 41);
+    border: 2px solid #e7bdfd;
+    color: #edcdff;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .skills-list p {
+        margin: 10px 5px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+/* ================================================================================================================
+==============================================|| Experiances section ||======================================================
+================================================================================================================*/
+
+.exp-container {
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+
+
+.exp-heading {
+    font-size: calc(30px + 0.5vw);
+    font-weight: 700;
+    background-color: rgb(28, 0, 41);
+    border-bottom: #e7bdfd solid 2px;
+    border-top: #e7bdfd solid 2px;
+    box-shadow: 0px 5px 0px 0px #1c0029;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 15px 0px;
+    text-align: center;
+    color: #e7bdfd;
+}
+
+.exp-grid {
+    padding: calc(40px + 0.5vw);
+}
+
+.exp-item-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1c0029;
+    padding: 15px 30px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.exp-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+.exp-item-title {
+    font-size: calc(15px + 0.5vw);
+    font-weight: 700;
+    color: #1c0029;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.exp-item-img {
+    aspect-ratio: 1/1;
+    width: 30vw;
+    border-radius: 5%;
+    background-image: url(images/ahmed_mas_.png);
+    background-position: center;
+    background-size: cover;
+    margin: 15px 10px;
+    padding: 10px 20px;
+    border: 2px solid #e7bdfd;
+    box-shadow: -5px 5px 0 #1c0029;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1091px) {
+    .exp-item {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-item:nth-child(2) .exp-item-info {
+        order: 2;
+    }
+
+    .exp-item:nth-child(2) .exp-item-img {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .exp-item {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-item:nth-child(2) .exp-item-info {
+        order: 2;
+    }
+
+    .exp-item:nth-child(2) .exp-item-img {
+        order: 1;
+    }
+
+    .exp-item-img {
+        width: 70vw;
+    }
+
+    .exp-item-paragraph {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    .exp-heading {
+        font-size: 20px;
+    }
+
+}
+
+.exp-item-info {
+    justify-self: center;
+    box-shadow: -5px 5px 0px 0px #1c0029;
+    /* border-radius: 10px; */
+    border: 2px solid #1c0029;
+    margin: 15px 10px;
+    padding: 20px 20px;
+    color: #e7bdfd;
+    /* background-color: rgb(28, 0, 41); */
+    backdrop-filter: blur(2px);
+    border: #1c0029 2px solid;
+    background-color: #e7bdfd;
+}
+
+.exp-item-img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ================================================================================================================
+==============================================|| Services section ||======================================================
+================================================================================================================*/
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: calc(40px + 0.5vw);
+}
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background: url("images/Stocks(ECCENTRIC)22.png") */
+    background: url("images/Stocks344.png") no-repeat fixed;
+    background-color: rgba(28, 0, 41, 1);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    padding: calc(40px + 0.5vw);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1);
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        background-image: url("images/Stocks344.png") no-repeat;
+    }
+    .skills{
+        background-image: url("images/Stocks333.png") no-repeat;
+    }
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    /* background-color: rgba(28, 0, 41,1); */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    padding: calc(20px + 0.5vw);
+    border: 2px solid #e7bdfd;
+    backdrop-filter: blur(40px);
+    /* box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 1); */
+}
+
+.service-item-title {
+    font-size: calc(12px + 0.5vw);
+    font-weight: 700;
+    color: #e7bdfd;
+    text-transform: uppercase;
+    padding: 15px 10px;
+}
+
+.service-item-paragraph {
+    font-size: 10px;
+    font-weight: 400;
+    color: #e7bdfd;
+    padding: 15px 10px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.service-item-btn {
+    margin-top: auto;
+    background-color: #e7bdfd;
+    font-size: 12px;
+    text-decoration: none;
+    border: none;
+    color: #1c0029;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: var(--pointer-cursor);
+    /* margin-top: 10px; */
+    border: solid 2px #e7bdfd;
+    border-radius: 4px;
+    /* justify-self: end; */
+}
+
+.service-item-btn:hover {
+    background-color: #1c0029;
+    color: #e7bdfd;
+    border-style: solid;
+    border-color: #e7bdfd;
+}
+
+
+/* ================================================================================================================
+==============================================|| Contact Form ||======================================================
+================================================================================================================*/
+
+label {
+    color: #e7bdfd;
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    width: clamp(400px, 50%, 800px);
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #1c0029;
+    border: #e7bdfd 2px solid;
+    box-shadow: -5px 5px 0px 0px #1c0029;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+input,
+textarea {
+    background-color: #e7bdfd;
+    width: 100%;
+    outline-style: none;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+input {
+    height: 45px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 90px;
+    font-size: x-large;
+    border-radius: 10px;
+
+}
+
+.form-title {
+    color: #e7bdfd;
+    font-size: xx-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e7bdfd;
+    text-align: center;
+}
+
+.send-btn {
+    width: 100%;
+    background-color: #e7bdfd;
+    border: none;
+    color: #1c0029;
+    font-size: x-large;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: var(--pointer-cursor);
+    margin-top: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color: #1c0029;
+}
+
+.send-btn:hover {
+    background-color: #1c0029;
+    color: #e7bdfd;
+    border-style: solid;
+    border-color: #e7bdfd;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #1c00298f;
+    font-size: 20px;
+    font-weight: 500;
+    /* filter: opacity(0.8); */
+}
+
+@media screen and (max-width: 868px) {
+    form {
+        width: 100%;
+        border-radius: 0;
+        border: #1c0029;
+        box-shadow: none;
+
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 14px;
+    }
+
+    input,
+    textarea {
+        font-size: 14px;
+    }
+
+    .send-btn {
+        font-size: 14px;
+    }
+}
+
+/* ================================================================================================================
+==================== animation =================================================================*/
+/* --------------- this works with intersectionObserver script ---------------*/ 
+
+.hidden-move {
+    opacity: 0;
+    /* filter: blur(5px); */
+    transform: translateX(-100px);
+    transition: all 0.5s ease-in;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    /* filter: blur(0px); */
+}
+
+.show2 {
+    opacity: 1 !important;
+    filter: blur(0px) !important;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.5s ease-in;
+}
+
+.infoParagraph {
+    transition-delay: 200ms;
+}

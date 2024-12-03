@@ -9,21 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fullscreen.css">
+    <link rel="stylesheet" href="projects.css">
     <script src="https://kit.fontawesome.com/440042d310.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <div id="blur-background-img"></div>
-    <div id="blur-background" onclick="hide()">
+    <div id="animated-background"></div>
+    <div id="blur-background" onclick="closeFullscreen()"></div>
     </div>
-    <div class="backgroundColor"></div>
-    <div class="backgroundSide"></div>
-    <div id="prev-card" class="next_prev"><i class="fa-solid fa-arrow-left arrow"></i>
+    <div class="full-container">
     </div>
-    <div id="next-card" class="next_prev"><i class="fa-solid fa-arrow-right arrow"></i>
+    <div id="prev-card" class="next_prev"><i class="fa-solid fa-angle-left arrow"></i>
     </div>
-
+    <div id="next-card" class="next_prev"><i class="fa-solid fa-angle-right arrow"></i>
+    </div>
 
     <header>
         <h2 class="h2-header">Ahmed Masmoudi</h2>
@@ -38,45 +39,31 @@
         <div class="side-div">
             <p class="side-name">Skills List</p>
             <ul class="skill-list">
-                <li class="li-side design-btn active" onclick="showDesign()">Graphic Design</li>
-                <li class="li-side video-btn" onclick="showVideo()">Video Editing</li>
-                <li class="li-side design3d-btn empty" onclick="show3d()">3D Design</li>
-                <li class="li-side web-btn empty" onclick="showWeb()">Web development</li>
-                <li class="li-side mobile-btn empty" onclick="showMobile()">Mobile development</li>
-                <li class="li-side desktop-btn empty" onclick="showDesktop()">Desktop development</li>
-                <li class="li-side game-btn empty" onclick="showGame()">Game development</li>
-                <li class="li-side ai-btn empty" onclick="showAi()">Artificial Intelligence</li>
+                <li class="li-side all-btn active">--- Show All ---</li>
+                <li class="li-side design-btn">Graphic Design</li>
+                <li class="li-side video-btn">Video Editing</li>
+                <!-- <li class="li-side design3d-btn empty">3D Design</li> -->
+                <li class="li-side web-btn">Web development</li>
+                <!-- <li class="li-side mobile-btn empty">Mobile development</li>
+                <li class="li-side desktop-btn empty">Desktop development</li>
+                <li class="li-side game-btn empty">Game development</li>
+                <li class="li-side ai-btn empty">Artificial Intelligence</li> -->
             </ul>
-            <!-- </div> -->
         </div>
-
-
-        <div class="design section">
-            <div class="grid-container grid-container-design">
+        <div class="all-container">
+            <div class="welcome">
+                <h1 class="h1-welcome">Welcome to my projects</h1>
+                <p class="p-welcome">It's an honor to show you what I've built up to now, hope you like it!</p>
+            </div>
+            <div id="all-skills">
             </div>
         </div>
-        <div class="video section">
-            <div class="grid-container grid-container-video">
-            </div>
-        </div>
-        <div class="design3d section">
-        </div>
-        <div class="web section">
-        </div>
-        <div class="mobile section">
-        </div>
-        <div class="desktop section">
-        </div>
-        <div class="game section">
-        </div>
-        <div class="ai section">
-        </div>
+        <div id="skills-projects" class="grid-container" style="display: none;"></div>
+
+
         <div id="burger-icon"><i class="fa-solid fa-bars"></i></div>
     </div>
 
-    <!--Full Image (when you click on it)-->
-
-    <div class="full"></div>
     <footer class="contact">
         <h2 class="h2-contact">Contact info</h2>
 
@@ -114,28 +101,11 @@
             </div>
         </div>
 
-
     </footer>
 
-
     <script src="script.js"></script>
-    <script>
-        document.getElementById('burger-icon').addEventListener('click', function () {
-            const sidebar = document.querySelector('.side-div');
-            const mainContent = document.querySelector('.section');
-            sidebar.classList.toggle('hide');
-            if (sidebar.classList.contains('hide')) {
-                // mainContent.style.marginLeft = '0';
-                document.getElementById('burger-icon').style.marginLeft = '0';
-                document.querySelector('.side-div').style.marginLeft = '-250px';
-            } else {
-                document.getElementById('burger-icon').style.marginLeft = '250px';
-                // mainContent.style.marginLeft = '250px'; // Adjust width as needed
-                document.querySelector('.side-div').style.marginLeft = '0';
-            }
-        });
-
-    </script>
+    <script src="fullscreen.js"></script>
+    <script src="side-div.js"></script>
 
 </body>
 
