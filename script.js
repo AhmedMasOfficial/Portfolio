@@ -152,7 +152,7 @@ function populateAllSkills(skills) {
             <h2 class="h2-skill">${skill.name}</h2>
             <i class="fa-solid fa-angle-right"></i>
         `;
-        skillTitle.onclick = () => populateSkillProjects(skill);
+        skillTitle.onclick = () => populateSkillProjects(skill.name);
 
         const skillProjectsWrapper = document.createElement('div');
         skillProjectsWrapper.classList.add('skill-projects-wrapper'); // Wrapper for scrollable and gradient

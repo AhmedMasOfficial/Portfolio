@@ -243,6 +243,17 @@
 }
 
 
+
+@media screen and (max-width: 768px) {
+    .side-name{
+        font-size: 18px;
+    }
+    .li-side {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+}
+
 /**************************/
 
 
